@@ -2290,3 +2290,4 @@
 [23-May-2016 00:00:48 UTC] PHP Notice:  Undefined variable: _menu_item_type in /srv/www/localdev.jessicapei.com/htdocs/wp-content/plugins/wordpress-importer/wordpress-importer.php on line 802
 [23-May-2016 00:00:48 UTC] PHP Notice:  Undefined variable: _menu_item_type in /srv/www/localdev.jessicapei.com/htdocs/wp-content/plugins/wordpress-importer/wordpress-importer.php on line 804
 [23-May-2016 00:05:18 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WP_Import has a deprecated constructor in /srv/www/localdev.jessicapei.com/htdocs/wp-content/plugins/wordpress-importer/wordpress-importer.php on line 38
+[25-May-2016 00:39:20 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; WP_Import has a deprecated constructor in /srv/www/localdev.jessicapei.com/htdocs/wp-content/plugins/wordpress-importer/wordpress-importer.php on line 38
