@@ -22,6 +22,10 @@
     }
   },
   "config": {
+<<<<<<< HEAD
     "devUrl": "http://localwork.jessicapei.com.dev"
+=======
+    "devUrl": "http://example.dev"
+>>>>>>> ac96875c57cb945f3278f34476a6e8d5d1a9300d
   }
 }
