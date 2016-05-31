@@ -6,6 +6,8 @@
 
 <section>
     <h3><?php the_field("skills_h3"); ?></h3>
+    <?php the_field("skills_summary"); ?>
+
 
 
 </section>
