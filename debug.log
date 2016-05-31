@@ -2376,3 +2376,5 @@
 [31-May-2016 18:50:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 35
 [31-May-2016 18:51:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 35
 [31-May-2016 18:55:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 35
+[31-May-2016 18:55:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 35
+[31-May-2016 18:59:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 35
