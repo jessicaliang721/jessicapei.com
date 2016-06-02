@@ -7,7 +7,7 @@
     </div>
 </section>
 
-<!--What I Do-->
+<!--Skills-->
 <section class="container-fluid">
     <div class="container">
         <h3><?php the_field("skills_h3"); ?></h3>
@@ -17,10 +17,10 @@
             $fields = CFS()->get( 'skills' );
             foreach ( $fields as $field ) {?>
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <?php
-                    echo $field['skill_image'];
-                    echo $field['skill_description'];
-                    ?>
+                    <?php echo $field['skill_percent']; ?>
+                    <div>
+                        <?php echo $field['skill_description']; ?>
+                    </div>
                 </div>
             <?php } ?>
         </div>

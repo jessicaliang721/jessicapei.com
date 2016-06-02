@@ -5,8 +5,8 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "common/global";
 @import "components/buttons";
+@import "components/circle";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
@@ -17,3 +17,5 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "common/global";
+

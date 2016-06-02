@@ -2747,3 +2747,23 @@ Stack trace:
 [02-Jun-2016 17:10:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
 [02-Jun-2016 17:14:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
 [02-Jun-2016 17:37:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:43:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 49
+[02-Jun-2016 17:47:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 49
+[02-Jun-2016 17:47:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 49
+[02-Jun-2016 17:48:27 UTC] PHP Notice:  Undefined index: skill_percent in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 21
+[02-Jun-2016 17:48:27 UTC] PHP Notice:  Undefined index: skill_percent in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 21
+[02-Jun-2016 17:48:27 UTC] PHP Notice:  Undefined index: skill_percent in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 21
+[02-Jun-2016 17:48:27 UTC] PHP Notice:  Undefined index: skill_percent in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 21
+[02-Jun-2016 17:48:27 UTC] PHP Notice:  Undefined index: skill_percent in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 21
+[02-Jun-2016 17:48:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:48:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:49:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:50:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:50:03 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:50:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:50:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:51:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:51:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:51:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:53:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[02-Jun-2016 17:53:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
