@@ -8,7 +8,7 @@
 </section>
 
 <!--Skills-->
-<section class="container-fluid">
+<section class="container-fluid section-background" style="background-image: url(<?php the_field('skills_background'); ?>)">
     <div class="container">
         <h3><?php the_field("skills_h3"); ?></h3>
         <?php the_field("skills_summary"); ?>
@@ -55,7 +55,7 @@
 </section>
 
 <!--Contact-->
-<section class="container-fluid">
+<section class="container-fluid section-background" style="background-image: url(<?php the_field('contact_background'); ?>)">
     <div class="container">
         <h3><?php the_field("contact_h3"); ?></h3>
         <div class="row">

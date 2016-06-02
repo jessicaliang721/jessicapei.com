@@ -8,7 +8,11 @@ $sidebar-sm-columns:    4;
 // Colors
 $brand-primary:         #27ae60;
 
-
+//Font
+$font-family-base: Verdana, sans-serif;
+$main-headings-font-family: 'Raleway', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
+$uppercase-font: uppercase;
 
 $full-width: 100%;
 
@@ -19,4 +23,12 @@ $transparent: rgba(0, 0, 0, 0);
   -moz-background-size: $size;
   -o-background-size: $size;
   background-size: $size;
+}
+
+@mixin transform($x) {
+  -webkit-transform: $x;
+  -moz-transform: $x;
+  -ms-transform: $x;
+  -o-transform: $x;
+  transform: $x;
 }

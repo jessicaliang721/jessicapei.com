@@ -6,10 +6,14 @@
   padding: 0;
 }
 
-.splash-background {
+.section-background {
   @include background-size(cover);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 50% 25%;
+}
+
+.splash-background {
+  @extend .section-background;
   height: 100vh;
 }
 
@@ -19,10 +23,51 @@
 }
 
 section {
-  padding: 40px 0 50px 0;
+  padding: 60px 0 80px 0;
 }
 
 .c100 {
   float: none;
   margin: 0 auto;
+}
+
+.headings {
+  font-family: $headings-font-family;
+  text-transform: $uppercase-font;
+}
+
+.main-headings {
+  font-family: $main-headings-font-family;
+  text-transform: $uppercase-font;
+}
+
+h1 {
+  @extend .main-headings;
+  letter-spacing: 8px;
+  font-size: 22px;
+}
+
+h2 {
+  @extend .main-headings;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+h3 {
+  @extend .headings;
+  font-size: 18px;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: 12px;
+  line-height: 2em;
+}
+
+.header-container {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  @include transform(-50%,-50%);
 }
