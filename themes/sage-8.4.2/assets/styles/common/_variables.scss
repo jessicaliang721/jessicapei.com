@@ -11,3 +11,12 @@ $brand-primary:         #27ae60;
 
 
 $full-width: 100%;
+
+$transparent: rgba(0, 0, 0, 0);
+
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
