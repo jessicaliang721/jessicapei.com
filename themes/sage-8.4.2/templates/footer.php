@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info text-center">
   <div class="container">
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>

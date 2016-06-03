@@ -1,8 +1,8 @@
-<!--Who Am I-->
+<!--Hello-->
 <section class="container-fluid">
     <div class="container">
-        <h3><?php the_field("about_h3"); ?></h3>
-        <img src="">
+        <h3 class="text-center"><?php the_field("about_h3"); ?></h3>
+        <img src="<?php the_field("about_picture"); ?>">
         <?php the_field("about_summary"); ?>
     </div>
 </section>
@@ -10,7 +10,7 @@
 <!--Skills-->
 <section class="container-fluid section-background" style="background-image: url(<?php the_field('skills_background'); ?>)">
     <div class="container">
-        <h3><?php the_field("skills_h3"); ?></h3>
+        <h3 class="text-center"><?php the_field("skills_h3"); ?></h3>
         <?php the_field("skills_summary"); ?>
         <div class="row text-center">
             <?php
@@ -30,7 +30,7 @@
 <!--My Work-->
 <section class="work container-fluid">
     <div class="container">
-        <h3><?php the_field("work_h3"); ?></h3>
+        <h3 class="text-center"><?php the_field("work_h3"); ?></h3>
         <div class="row text-center">
             <?php
             $fields = CFS()->get( 'work' );
@@ -43,8 +43,10 @@
                         var_dump($values);
                         echo $the_post->post_title;
                     } ?>
-                    <a href=""><img src="<?php echo $field['work_image']; ?>"></a>
-                    <p><?php echo $field['work_title']; ?></p>
+                    <a href="">
+                        <img src="<?php echo $field['work_image']; ?>">
+                        <span class="caption"><?php echo $field['work_title']; ?></span>
+                    </a>
                 </div>
             <?php } ?>
         </div>
@@ -55,9 +57,9 @@
 </section>
 
 <!--Contact-->
-<section class="container-fluid section-background" style="background-image: url(<?php the_field('contact_background'); ?>)">
+<section class="container-fluid section-background contact" style="background-image: url(<?php the_field('contact_background'); ?>)">
     <div class="container">
-        <h3><?php the_field("contact_h3"); ?></h3>
+        <h3 class="text-center"><?php the_field("contact_h3"); ?></h3>
         <div class="row">
             <div class="col-xs-12">
                 <?php the_field("contact_summary"); ?>

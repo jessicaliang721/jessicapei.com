@@ -7,12 +7,20 @@ $sidebar-sm-columns:    4;
 
 // Colors
 $brand-primary:         #27ae60;
+$input-color: #333;
+$light-color: #D6E1E4;
+$dark-color: #A4A7A9;
 
 //Font
 $font-family-base: Verdana, sans-serif;
 $main-headings-font-family: 'Raleway', sans-serif;
 $headings-font-family: 'Montserrat', sans-serif;
 $uppercase-font: uppercase;
+
+//Bootstrap Screen Media Queries
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
 
 $full-width: 100%;
 
@@ -25,10 +33,14 @@ $transparent: rgba(0, 0, 0, 0);
   background-size: $size;
 }
 
-@mixin transform($x) {
-  -webkit-transform: $x;
-  -moz-transform: $x;
-  -ms-transform: $x;
-  -o-transform: $x;
-  transform: $x;
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  -o-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
 }

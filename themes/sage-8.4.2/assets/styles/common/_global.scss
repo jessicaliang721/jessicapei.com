@@ -10,6 +10,7 @@
   @include background-size(cover);
   background-repeat: no-repeat;
   background-position: 50% 25%;
+  background-attachment: fixed;
 }
 
 .splash-background {
@@ -18,8 +19,29 @@
 }
 
 .navbar-default {
+  @extend .headings;
   background-color: $transparent;
   border-color: $transparent;
+}
+
+.headings {
+  font-family: $headings-font-family;
+  text-transform: $uppercase-font;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  @extend .headings;
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+  color: #fff;
+}
+
+.main-headings {
+  font-family: $main-headings-font-family;
+  text-transform: $uppercase-font;
 }
 
 section {
@@ -31,26 +53,16 @@ section {
   margin: 0 auto;
 }
 
-.headings {
-  font-family: $headings-font-family;
-  text-transform: $uppercase-font;
-}
-
-.main-headings {
-  font-family: $main-headings-font-family;
-  text-transform: $uppercase-font;
-}
-
 h1 {
   @extend .main-headings;
   letter-spacing: 8px;
-  font-size: 22px;
+  font-size: 28px;
 }
 
 h2 {
   @extend .main-headings;
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h3 {
@@ -69,5 +81,78 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  @include transform(-50%,-50%);
+  @include translate(-50%,-50%);
 }
+
+section.contact form {
+  textarea, input {
+    width: $full-width;
+    border: 2px solid #333;
+    color: $input-color;
+    padding: 9px 10px;
+    background: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: $headings-font-family;
+  }
+}
+
+[type=submit]:hover {
+  background: $light-color;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $input-color;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $input-color;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $input-color;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $input-color;
+}
+
+footer {
+  background: $dark-color;
+  color: #fff;
+}
+
+.work .caption {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  text-align: left;
+  padding: 15px;
+}
+
+.work .caption:hover {
+  opacity: 1;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+  section.contact form {
+    input:not([type="submit"]) {
+      width: 32.7%;
+      float: left;
+      margin-right: (100% - 98.1%)/3;
+      margin-bottom: 10px;
+    }
+  }
+
+  section.contact form {
+    p:nth-of-type(3) input {
+      margin-right: 0;
+      width: 33%;
+    }
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg) {  }
