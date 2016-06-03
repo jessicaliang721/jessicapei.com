@@ -74,4 +74,20 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  //sticky nav
+  $(window).scroll(function(){
+    var sticky = $('.sticky'),
+        scroll = $(window).scrollTop(),
+        navbar = $('.navbar-default');
+
+    if (scroll >= 1) {
+      sticky.addClass('fixed');
+      navbar.removeClass('nav-transparent');
+    }
+    else {
+      sticky.removeClass('fixed');
+      navbar.addClass('nav-transparent');
+    }
+  });
+
 })(jQuery); // Fully reference jQuery after this point.

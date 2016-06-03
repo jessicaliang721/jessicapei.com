@@ -6919,20 +6919,22 @@ body#tinymce {
 .splash-background {
   height: 100vh; }
 
-.navbar-default {
+.navbar-default.nav-transparent {
   background-color: transparent;
   border-color: transparent; }
 
-.headings, .navbar-default, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover, h3 {
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.headings, .navbar-default.nav-transparent, h3 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  color: #fff;
-  background-color: transparent; }
-
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
-  color: #fff; }
+  color: #333; }
 
 .main-headings, h1, h2 {
   font-family: "Raleway", sans-serif;
@@ -7004,15 +7006,28 @@ footer {
   background: #A4A7A9;
   color: #fff; }
 
-.work .caption {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  text-align: left;
-  padding: 15px; }
-
-.work .caption:hover {
+.work .single-tile {
+  position: relative;
+  margin-bottom: 20px; }
+  .work .single-tile .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 9px;
+    border: 2px solid #333;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase; }
+.work .single-tile a {
+  color: #333; }
+.work .single-tile:hover .caption, .work .single-tile:focus .caption {
   opacity: 1; }
+.work .single-tile:hover img, .work .single-tile:focus img {
+  opacity: .35; }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */

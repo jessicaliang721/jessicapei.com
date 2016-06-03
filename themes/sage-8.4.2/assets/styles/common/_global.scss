@@ -18,10 +18,17 @@
   height: 100vh;
 }
 
-.navbar-default {
+.navbar-default.nav-transparent {
   @extend .headings;
   background-color: $transparent;
   border-color: $transparent;
+}
+
+.fixed {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
 }
 
 .headings {
@@ -29,14 +36,14 @@
   text-transform: $uppercase-font;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  @extend .headings;
-  color: #fff;
-  background-color: transparent;
-}
+//.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+//  @extend .headings;
+//  color: $input-color;
+//  background-color: transparent;
+//}
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
-  color: #fff;
+  color: $input-color;
 }
 
 .main-headings {
@@ -87,7 +94,7 @@ body {
 section.contact form {
   textarea, input {
     width: $full-width;
-    border: 2px solid #333;
+    border: 2px solid $input-color;
     color: $input-color;
     padding: 9px 10px;
     background: none;
@@ -119,17 +126,43 @@ footer {
   color: #fff;
 }
 
-.work .caption {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  text-align: left;
-  padding: 15px;
+.work {
+  .single-tile {
+    position: relative;
+    margin-bottom: 20px;
+
+    .caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      @include translate(-50%, -50%);
+      padding: 9px;
+      border: 2px solid $input-color;
+      font-family: $headings-font-family;
+      text-transform: uppercase;
+    }
+  }
+
+  .single-tile {
+    a {
+      color: $input-color;
+    }
+  }
+
+  .single-tile:hover, .single-tile:focus {
+    .caption {
+      opacity: 1;
+    }
+    img {
+      opacity: .35;
+    }
+  }
 }
 
-.work .caption:hover {
-  opacity: 1;
-}
+//.work .single-tile:hover .caption {
+//  opacity: 1;
+//}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm) {  }
@@ -155,4 +188,4 @@ footer {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg) {  }
+@media (min-width: $screen-lg) {}
