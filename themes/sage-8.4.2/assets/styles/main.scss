@@ -5,8 +5,10 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "common/global";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500);
 @import "components/buttons";
+@import "components/circle";
 @import "components/comments";
 @import "components/forms";
 @import "components/grid";
@@ -17,3 +19,4 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "common/global";
