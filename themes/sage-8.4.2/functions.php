@@ -115,6 +115,6 @@ function work_custom_post_type() {
       'capability_type'       => 'page',
   );
   register_post_type( 'work', $args );
-
+  flush_rewrite_rules();
 }
 add_action( 'init', 'work_custom_post_type', 0 );

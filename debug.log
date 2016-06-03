@@ -2891,3 +2891,10 @@ Stack trace:
 [03-Jun-2016 15:19:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'work_custom_post_type' not found or invalid function name in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/plugin.php on line 525
 [03-Jun-2016 15:19:03 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'work_custom_post_type' not found or invalid function name in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/plugin.php on line 525
 [03-Jun-2016 15:19:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[03-Jun-2016 15:54:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[03-Jun-2016 18:17:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[03-Jun-2016 18:17:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[03-Jun-2016 18:18:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[03-Jun-2016 18:22:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 41
+[03-Jun-2016 19:10:35 UTC] PHP Parse error:  syntax error, unexpected end of file in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 87
+[03-Jun-2016 19:13:32 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 55

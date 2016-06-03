@@ -31,25 +31,35 @@
 <section class="work container-fluid">
     <div class="container">
         <h3 class="text-center"><?php the_field("work_h3"); ?></h3>
-        <div class="row text-center">
-            <?php
-            $fields = CFS()->get( 'work' );
-            foreach ( $fields as $field ) {?>
+        <?php
+            $args = array(
+                'post_type' => 'work',
+                'posts_per_page' => 9
+            );
+            $loop = new WP_Query( $args );
+            if ($loop->have_posts()) {
+            $i = 0;
+            while ($loop->have_posts()) : $loop->the_post();
+            if ($i % 2 == 0) { ?>
+                <div class="row text-center">
+            <?php } ?>
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <?php
-                    $values = CFS()->get( 'work_url' );
-                    foreach ( $values as $post_id ) {
-                        $the_post = get_post( $post_id );
-                        var_dump($values);
-                        echo $the_post->post_title;
-                    } ?>
-                    <a href="">
-                        <img src="<?php echo $field['work_image']; ?>">
-                        <span class="caption"><?php echo $field['work_title']; ?></span>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail('medium'); ?>
+                        <div><?php the_title(); ?></div>
                     </a>
                 </div>
-            <?php } ?>
-        </div>
+            <?php
+                // increment the loop BEFORE we test the variable
+                $i++;
+                if ($i != 0 && $i % 2 == 0) { ?>
+                    </div>
+                    <div class="clearfix"></div>
+                <?php } ?>
+        <?php endwhile;
+            }
+            wp_reset_query(); ?>
+
         <div class="row text-center">
             <button>View More</button>
         </div>
