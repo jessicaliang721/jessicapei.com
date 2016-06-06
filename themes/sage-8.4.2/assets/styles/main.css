@@ -6929,12 +6929,27 @@ body#tinymce {
   left: 0;
   width: 100%; }
 
-.headings, .navbar-default.nav-transparent, h3 {
+.headings, .navbar-default, h3 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 2px solid #333; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: #333;
+  text-decoration: underline;
+  background-color: transparent; }
+
+.navbar-default.nav-transparent .navbar-nav > .active > a, .navbar-default.nav-transparent .navbar-nav > .active > a:focus, .navbar-default.nav-transparent .navbar-nav > .active > a:hover {
+  color: #fff; }
+
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
   color: #333; }
+
+.navbar-default.nav-transparent .navbar-nav > li > a, .navbar-default.nav-transparent .navbar-text {
+  color: #fff; }
 
 .main-headings, h1, h2 {
   font-family: "Raleway", sans-serif;
