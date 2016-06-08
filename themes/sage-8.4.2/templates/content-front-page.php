@@ -73,7 +73,7 @@
         <h3 class="text-center"><?php the_field("contact_h3"); ?></h3>
         <div class="row">
             <div class="col-xs-12">
-                <?php the_field("contact_summary"); ?>
+                <p><?php the_field("contact_summary"); ?></p>
                 <?php the_content(); ?>
             </div>
         </div>

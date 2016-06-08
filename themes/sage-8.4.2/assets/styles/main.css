@@ -7019,7 +7019,9 @@ section.contact form textarea, section.contact form input {
 
 footer {
   background: #A4A7A9;
-  color: #fff; }
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .work .single-tile {
   position: relative;
@@ -7043,6 +7045,16 @@ footer {
   opacity: 1; }
 .work .single-tile:hover img, .work .single-tile:focus img {
   opacity: .35; }
+
+.social-icons {
+  padding: 0;
+  margin: 0; }
+  .social-icons li {
+    display: inline-block;
+    padding: 10px; }
+
+.glyphicon-menu-down {
+  font-size: 24px; }
 
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
