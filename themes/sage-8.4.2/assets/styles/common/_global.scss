@@ -64,8 +64,42 @@
   text-transform: $uppercase-font;
 }
 
-section {
+.divider {
+  width: 50px;
+  height: 3px;
+  margin: 30px auto;
+  background-color: $light-color;
+  display: block;
+  //margin-bottom: 30px;
+}
+.btn-default {
+  border: 2px solid $input-color;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-family: $headings-font-family;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: $input-color;
+}
+
+section,
+.entry-content {
   padding: 60px 0 80px 0;
+}
+
+section.contact {
+  form {
+    input:hover,
+    input:active:focus,
+    input:focus,
+    textarea:hover,
+    textarea:active:focus,
+    textarea:focus {
+      @extend .btn-default;
+      background-color: transparent;
+    }
+  }
 }
 
 .c100 {
@@ -106,19 +140,16 @@ body {
 
 section.contact form {
   textarea, input {
+    @extend .btn-default;
     width: $full-width;
-    border: 2px solid $input-color;
-    color: $input-color;
     padding: 9px 10px;
     background: none;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-family: $headings-font-family;
   }
 }
 
-[type=submit]:hover {
+section.contact form [type=submit]:hover, [type=button]:hover {
   background: $light-color;
+  border-color: $input-color;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -132,6 +163,10 @@ section.contact form {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: $input-color;
+}
+
+div.wpcf7-validation-errors {
+  border: 2px solid red;
 }
 
 footer {
@@ -186,14 +221,25 @@ footer {
 
 .glyphicon-menu-down {
   font-size: 24px;
+  color: white;
 }
 
-//.work .single-tile:hover .caption {
-//  opacity: 1;
-//}
+//WORK CPT
+.work header {
+  height: 350px;
+}
+
+.work h1 {
+  @extend .header-container;
+  color: $input-color
+}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm) {  }
+@media (min-width: $screen-sm) {
+  .nav.navbar-nav {
+    float: right;
+  }
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md) {
