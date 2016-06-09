@@ -88,7 +88,8 @@ a {
 }
 
 section,
-.entry-content {
+.entry-content,
+.page.container {
   padding: 60px 0 80px 0;
 }
 
@@ -151,7 +152,7 @@ section.contact form {
   }
 }
 
-section.contact form [type=submit]:hover, [type=button]:hover {
+section.contact form [type=submit]:hover, .btn:hover {
   background: $light-color;
   border-color: $input-color;
 }
@@ -229,11 +230,12 @@ footer.content-info {
 }
 
 //WORK CPT
-.work header {
+.work header.single-post, .page-header {
   height: 350px;
+  text-align: center;
 }
 
-.work h1 {
+article header h1, .page-header h1 {
   @extend .header-container;
   color: $input-color
 }
@@ -243,16 +245,26 @@ footer.content-info {
   margin-top: 60px;
 }
 
-a[rel~="next"] {
-  margin-right: 15px;
-}
-
-a[rel~="prev"] {
-  margin-left: 15px;
-}
+//a[rel~="next"] {
+//  margin-right: 15px;
+//}
+//
+//a[rel~="prev"] {
+//  margin-left: 15px;
+//}
 
 article footer {
   padding: 30px 0;
+}
+
+.prev-post, .next-post {
+  white-space: pre-line;
+  display: inline-block;
+  width: 50%;
+}
+
+.prev-post {
+  float: right;
 }
 
 /* Small devices (tablets, 768px and up) */

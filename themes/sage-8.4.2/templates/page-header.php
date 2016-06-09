@@ -10,6 +10,11 @@
     </div>
   </div>
 
+<?php }
+elseif (is_post_type_archive()) { ?>
+  <div class="page-header">
+    <h1><?php post_type_archive_title(); ?></h1>
+  </div>
 <?php } else { ?>
   <div class="page-header">
     <h1><?= Titles\title(); ?></h1>
