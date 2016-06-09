@@ -5,15 +5,7 @@
   <div class="container-fluid">
     <div class="container">
       <p>Copyright &copy Jessica Pei <?php echo date('Y'); ?></p>
-      <ul>
-        <li>
-          <a href="http://twitter.com/<?php echo get_option('twitterid'); ?>">Twitter</a>
-        </li>
-        <li>
-          <a href="http://facebook.com/<?php echo get_option('fb_link'); ?>">Facebook</a>
-        </li>
-      </ul>
-
+      <?php get_template_part('templates/social'); ?>
     </div>
   </div>
 </footer>

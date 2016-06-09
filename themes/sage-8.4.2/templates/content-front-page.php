@@ -1,7 +1,8 @@
 <!--Hello-->
-<section class="container-fluid">
+<section class="container-fluid" id="intro-about">
     <div class="container">
         <h3 class="text-center"><?php the_field("about_h3"); ?></h3>
+        <span class="divider"></span>
         <img src="<?php the_field("about_picture"); ?>">
         <?php the_field("about_summary"); ?>
     </div>
@@ -11,6 +12,7 @@
 <section class="container-fluid section-background" style="background-image: url(<?php the_field('skills_background'); ?>)">
     <div class="container">
         <h3 class="text-center"><?php the_field("skills_h3"); ?></h3>
+        <span class="divider"></span>
         <?php the_field("skills_summary"); ?>
         <div class="row text-center">
             <?php
@@ -31,6 +33,7 @@
 <section class="work container-fluid">
     <div class="container">
         <h3 class="text-center"><?php the_field("work_h3"); ?></h3>
+        <span class="divider"></span>
         <?php
             $args = array(
                 'post_type' => 'work',
@@ -62,7 +65,7 @@
     </div>
     <div class="container">
         <div class="row text-center">
-            <button>View More</button>
+            <button class="btn btn-default" type="button">View More</button>
         </div>
     </div>
 </section>
@@ -71,9 +74,10 @@
 <section class="container-fluid section-background contact" style="background-image: url(<?php the_field('contact_background'); ?>)">
     <div class="container">
         <h3 class="text-center"><?php the_field("contact_h3"); ?></h3>
+        <span class="divider"></span>
         <div class="row">
             <div class="col-xs-12">
-                <?php the_field("contact_summary"); ?>
+                <p><?php the_field("contact_summary"); ?></p>
                 <?php the_content(); ?>
             </div>
         </div>

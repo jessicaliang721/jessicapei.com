@@ -45,11 +45,22 @@ audio:not([controls]) {
 template {
   display: none; }
 
-a {
+a, .btn-default, .search-form .search-submit, section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus, section.contact form textarea, section.contact form input {
   background-color: transparent; }
 
-a:active,
-a:hover {
+a:active, .btn-default:active, .search-form .search-submit:active,
+section.contact form input:active:focus,
+section.contact form textarea:active:focus, section.contact form textarea:active, section.contact form input:active,
+a:hover,
+.btn-default:hover,
+.search-form .search-submit:hover,
+section.contact form input:hover,
+section.contact form textarea:hover {
   outline: 0; }
 
 abbr[title] {
@@ -194,18 +205,31 @@ th {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  a,
-  a:visited {
+  a, .btn-default, .search-form .search-submit, section.contact form input:hover,
+  section.contact form input:active:focus,
+  section.contact form input:focus,
+  section.contact form textarea:hover,
+  section.contact form textarea:active:focus,
+  section.contact form textarea:focus, section.contact form textarea, section.contact form input,
+  a:visited,
+  .btn-default:visited,
+  .search-form .search-submit:visited,
+  section.contact form textarea:visited,
+  section.contact form input:visited {
     text-decoration: underline; }
 
-  a[href]:after {
+  a[href]:after, [href].btn-default:after, .search-form [href].search-submit:after, section.contact form textarea[href]:after, section.contact form input[href]:after {
     content: " (" attr(href) ")"; }
 
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]:after, [href^="#"].btn-default:after, .search-form [href^="#"].search-submit:after, section.contact form textarea[href^="#"]:after, section.contact form input[href^="#"]:after,
+  a[href^="javascript:"]:after,
+  [href^="javascript:"].btn-default:after,
+  .search-form [href^="javascript:"].search-submit:after,
+  section.contact form textarea[href^="javascript:"]:after,
+  section.contact form input[href^="javascript:"]:after {
     content: ""; }
 
   pre,
@@ -1086,13 +1110,27 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
-a {
+a, .btn-default, .search-form .search-submit, section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus, section.contact form textarea, section.contact form input {
   color: #27ae60;
   text-decoration: none; }
-  a:hover, a:focus {
+  a:hover, .btn-default:hover, .search-form .search-submit:hover, section.contact form input:hover,
+  section.contact form textarea:hover, a:focus, .btn-default:focus, .search-form .search-submit:focus,
+  section.contact form input:focus:active,
+  section.contact form input:focus,
+  section.contact form textarea:focus:active,
+  section.contact form textarea:focus {
     color: #19703e;
     text-decoration: underline; }
-  a:focus {
+  a:focus, .btn-default:focus, .search-form .search-submit:focus,
+  section.contact form input:focus:active,
+  section.contact form input:focus,
+  section.contact form textarea:focus:active,
+  section.contact form textarea:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
@@ -1279,36 +1317,61 @@ mark,
 .text-primary {
   color: #27ae60; }
 
-a.text-primary:hover,
-a.text-primary:focus {
+a.text-primary:hover, .text-primary.btn-default:hover, .search-form .text-primary.search-submit:hover, section.contact form input.text-primary:hover,
+section.contact form textarea.text-primary:hover,
+a.text-primary:focus,
+.text-primary.btn-default:focus,
+.search-form .text-primary.search-submit:focus,
+section.contact form input.text-primary:focus,
+section.contact form textarea.text-primary:focus {
   color: #1e8449; }
 
 .text-success {
   color: #3c763d; }
 
-a.text-success:hover,
-a.text-success:focus {
+a.text-success:hover, .text-success.btn-default:hover, .search-form .text-success.search-submit:hover, section.contact form input.text-success:hover,
+section.contact form textarea.text-success:hover,
+a.text-success:focus,
+.text-success.btn-default:focus,
+.search-form .text-success.search-submit:focus,
+section.contact form input.text-success:focus,
+section.contact form textarea.text-success:focus {
   color: #2b542c; }
 
 .text-info {
   color: #31708f; }
 
-a.text-info:hover,
-a.text-info:focus {
+a.text-info:hover, .text-info.btn-default:hover, .search-form .text-info.search-submit:hover, section.contact form input.text-info:hover,
+section.contact form textarea.text-info:hover,
+a.text-info:focus,
+.text-info.btn-default:focus,
+.search-form .text-info.search-submit:focus,
+section.contact form input.text-info:focus,
+section.contact form textarea.text-info:focus {
   color: #245269; }
 
 .text-warning {
   color: #8a6d3b; }
 
-a.text-warning:hover,
-a.text-warning:focus {
+a.text-warning:hover, .text-warning.btn-default:hover, .search-form .text-warning.search-submit:hover, section.contact form input.text-warning:hover,
+section.contact form textarea.text-warning:hover,
+a.text-warning:focus,
+.text-warning.btn-default:focus,
+.search-form .text-warning.search-submit:focus,
+section.contact form input.text-warning:focus,
+section.contact form textarea.text-warning:focus {
   color: #66512c; }
 
 .text-danger {
   color: #a94442; }
 
-a.text-danger:hover,
-a.text-danger:focus {
+a.text-danger:hover, .text-danger.btn-default:hover, .search-form .text-danger.search-submit:hover, section.contact form input.text-danger:hover,
+section.contact form textarea.text-danger:hover,
+a.text-danger:focus,
+.text-danger.btn-default:focus,
+.search-form .text-danger.search-submit:focus,
+section.contact form input.text-danger:focus,
+section.contact form textarea.text-danger:focus {
   color: #843534; }
 
 .bg-primary {
@@ -1317,36 +1380,61 @@ a.text-danger:focus {
 .bg-primary {
   background-color: #27ae60; }
 
-a.bg-primary:hover,
-a.bg-primary:focus {
+a.bg-primary:hover, .bg-primary.btn-default:hover, .search-form .bg-primary.search-submit:hover, section.contact form input.bg-primary:hover,
+section.contact form textarea.bg-primary:hover,
+a.bg-primary:focus,
+.bg-primary.btn-default:focus,
+.search-form .bg-primary.search-submit:focus,
+section.contact form input.bg-primary:focus,
+section.contact form textarea.bg-primary:focus {
   background-color: #1e8449; }
 
 .bg-success {
   background-color: #dff0d8; }
 
-a.bg-success:hover,
-a.bg-success:focus {
+a.bg-success:hover, .bg-success.btn-default:hover, .search-form .bg-success.search-submit:hover, section.contact form input.bg-success:hover,
+section.contact form textarea.bg-success:hover,
+a.bg-success:focus,
+.bg-success.btn-default:focus,
+.search-form .bg-success.search-submit:focus,
+section.contact form input.bg-success:focus,
+section.contact form textarea.bg-success:focus {
   background-color: #c1e2b3; }
 
 .bg-info {
   background-color: #d9edf7; }
 
-a.bg-info:hover,
-a.bg-info:focus {
+a.bg-info:hover, .bg-info.btn-default:hover, .search-form .bg-info.search-submit:hover, section.contact form input.bg-info:hover,
+section.contact form textarea.bg-info:hover,
+a.bg-info:focus,
+.bg-info.btn-default:focus,
+.search-form .bg-info.search-submit:focus,
+section.contact form input.bg-info:focus,
+section.contact form textarea.bg-info:focus {
   background-color: #afd9ee; }
 
 .bg-warning {
   background-color: #fcf8e3; }
 
-a.bg-warning:hover,
-a.bg-warning:focus {
+a.bg-warning:hover, .bg-warning.btn-default:hover, .search-form .bg-warning.search-submit:hover, section.contact form input.bg-warning:hover,
+section.contact form textarea.bg-warning:hover,
+a.bg-warning:focus,
+.bg-warning.btn-default:focus,
+.search-form .bg-warning.search-submit:focus,
+section.contact form input.bg-warning:focus,
+section.contact form textarea.bg-warning:focus {
   background-color: #f7ecb5; }
 
 .bg-danger {
   background-color: #f2dede; }
 
-a.bg-danger:hover,
-a.bg-danger:focus {
+a.bg-danger:hover, .bg-danger.btn-default:hover, .search-form .bg-danger.search-submit:hover, section.contact form input.bg-danger:hover,
+section.contact form textarea.bg-danger:hover,
+a.bg-danger:focus,
+.bg-danger.btn-default:focus,
+.search-form .bg-danger.search-submit:focus,
+section.contact form input.bg-danger:focus,
+section.contact form textarea.bg-danger:focus {
   background-color: #e4b9b9; }
 
 .page-header {
@@ -3180,35 +3268,70 @@ select[multiple].input-lg,
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-a.btn.disabled, .search-form a.disabled.search-submit, fieldset[disabled] a.btn, fieldset[disabled] .search-form a.search-submit, .search-form fieldset[disabled] a.search-submit {
+a.btn.disabled, .search-form .disabled.search-submit, .btn.disabled.btn-default, .comment-form input.disabled.btn-default[type="submit"], .comment-form section.contact form input.disabled[type="submit"], section.contact form .comment-form input.disabled[type="submit"], section.contact form textarea.btn.disabled, section.contact form input.btn.disabled, fieldset[disabled] a.btn, fieldset[disabled] .search-form .search-submit, .search-form fieldset[disabled] .search-submit, fieldset[disabled] .btn.btn-default, fieldset[disabled] .comment-form input.btn-default[type="submit"], .comment-form fieldset[disabled] input.btn-default[type="submit"], fieldset[disabled] .comment-form section.contact form input[type="submit"], .comment-form section.contact form fieldset[disabled] input[type="submit"], fieldset[disabled] section.contact form .comment-form input[type="submit"], section.contact form .comment-form fieldset[disabled] input[type="submit"], fieldset[disabled] section.contact form textarea.btn, section.contact form fieldset[disabled] textarea.btn, fieldset[disabled] section.contact form input.btn, section.contact form fieldset[disabled] input.btn {
   pointer-events: none; }
 
-.btn-default, .search-form .search-submit {
+.btn-default, .search-form .search-submit, section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus, section.contact form textarea, section.contact form input {
   color: #333;
   background-color: #fff;
   border-color: #ccc; }
-  .btn-default:focus, .search-form .search-submit:focus, .btn-default.focus, .search-form .focus.search-submit {
+  .btn-default:focus, .search-form .search-submit:focus,
+  section.contact form input:focus:active,
+  section.contact form input:focus,
+  section.contact form textarea:focus:active,
+  section.contact form textarea:focus, .btn-default.focus, .search-form .focus.search-submit, section.contact form textarea.focus, section.contact form input.focus {
     color: #333;
     background-color: #e6e6e6;
     border-color: #8c8c8c; }
-  .btn-default:hover, .search-form .search-submit:hover {
+  .btn-default:hover, .search-form .search-submit:hover, section.contact form input:hover,
+  section.contact form textarea:hover {
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad; }
-  .btn-default:active, .search-form .search-submit:active, .btn-default.active, .search-form .active.search-submit, .open > .btn-default.dropdown-toggle, .search-form .open > .dropdown-toggle.search-submit {
+  .btn-default:active, .search-form .search-submit:active,
+  section.contact form input:active:focus,
+  section.contact form textarea:active:focus, section.contact form textarea:active, section.contact form input:active, .btn-default.active, .search-form .active.search-submit, section.contact form textarea.active, section.contact form input.active, .open > .btn-default.dropdown-toggle, .search-form .open > .dropdown-toggle.search-submit, section.contact form .open > textarea.dropdown-toggle, section.contact form .open > input.dropdown-toggle {
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad; }
-    .btn-default:active:hover, .search-form .search-submit:active:hover, .btn-default:active:focus, .search-form .search-submit:active:focus, .btn-default:active.focus, .search-form .search-submit:active.focus, .btn-default.active:hover, .search-form .active.search-submit:hover, .btn-default.active:focus, .search-form .active.search-submit:focus, .btn-default.active.focus, .search-form .active.focus.search-submit, .open > .btn-default.dropdown-toggle:hover, .search-form .open > .dropdown-toggle.search-submit:hover, .open > .btn-default.dropdown-toggle:focus, .search-form .open > .dropdown-toggle.search-submit:focus, .open > .btn-default.dropdown-toggle.focus, .search-form .open > .dropdown-toggle.focus.search-submit {
+    .btn-default:active:hover, .search-form .search-submit:active:hover, section.contact form input:active:hover,
+    section.contact form textarea:active:hover, .btn-default:active:focus, .search-form .search-submit:active:focus,
+    section.contact form input:active:focus,
+    section.contact form textarea:active:focus, .btn-default:active.focus, .search-form .search-submit:active.focus, section.contact form textarea:active.focus, section.contact form input:active.focus, .btn-default.active:hover, .search-form .active.search-submit:hover, section.contact form input.active:hover,
+    section.contact form textarea.active:hover, .btn-default.active:focus, .search-form .active.search-submit:focus,
+    section.contact form input.active:focus,
+    section.contact form textarea.active:focus, .btn-default.active.focus, .search-form .active.focus.search-submit, section.contact form textarea.active.focus, section.contact form input.active.focus, .open > .btn-default.dropdown-toggle:hover, .search-form .open > .dropdown-toggle.search-submit:hover, section.contact form .open > input.dropdown-toggle:hover,
+    section.contact form .open > textarea.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .search-form .open > .dropdown-toggle.search-submit:focus,
+    section.contact form .open > input.dropdown-toggle:focus,
+    section.contact form .open > textarea.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus, .search-form .open > .dropdown-toggle.focus.search-submit, section.contact form .open > textarea.dropdown-toggle.focus, section.contact form .open > input.dropdown-toggle.focus {
       color: #333;
       background-color: #d4d4d4;
       border-color: #8c8c8c; }
-  .btn-default:active, .search-form .search-submit:active, .btn-default.active, .search-form .active.search-submit, .open > .btn-default.dropdown-toggle, .search-form .open > .dropdown-toggle.search-submit {
+  .btn-default:active, .search-form .search-submit:active,
+  section.contact form input:active:focus,
+  section.contact form textarea:active:focus, section.contact form textarea:active, section.contact form input:active, .btn-default.active, .search-form .active.search-submit, section.contact form textarea.active, section.contact form input.active, .open > .btn-default.dropdown-toggle, .search-form .open > .dropdown-toggle.search-submit, section.contact form .open > textarea.dropdown-toggle, section.contact form .open > input.dropdown-toggle {
     background-image: none; }
-  .btn-default.disabled:hover, .search-form .disabled.search-submit:hover, .btn-default.disabled:focus, .search-form .disabled.search-submit:focus, .btn-default.disabled.focus, .search-form .disabled.focus.search-submit, .btn-default[disabled]:hover, .search-form [disabled].search-submit:hover, .btn-default[disabled]:focus, .search-form [disabled].search-submit:focus, .btn-default[disabled].focus, .search-form [disabled].focus.search-submit, fieldset[disabled] .btn-default:hover, fieldset[disabled] .search-form .search-submit:hover, .search-form fieldset[disabled] .search-submit:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .search-form .search-submit:focus, .search-form fieldset[disabled] .search-submit:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .search-form .focus.search-submit, .search-form fieldset[disabled] .focus.search-submit {
+  .btn-default.disabled:hover, .search-form .disabled.search-submit:hover, section.contact form input.disabled:hover,
+  section.contact form textarea.disabled:hover, .btn-default.disabled:focus, .search-form .disabled.search-submit:focus,
+  section.contact form input.disabled:focus,
+  section.contact form textarea.disabled:focus, .btn-default.disabled.focus, .search-form .disabled.focus.search-submit, section.contact form textarea.disabled.focus, section.contact form input.disabled.focus, .btn-default[disabled]:hover, .search-form [disabled].search-submit:hover, section.contact form input[disabled]:hover,
+  section.contact form textarea[disabled]:hover, .btn-default[disabled]:focus, .search-form [disabled].search-submit:focus,
+  section.contact form input[disabled]:focus,
+  section.contact form textarea[disabled]:focus, .btn-default[disabled].focus, .search-form [disabled].focus.search-submit, section.contact form textarea[disabled].focus, section.contact form input[disabled].focus, fieldset[disabled] .btn-default:hover, fieldset[disabled] .search-form .search-submit:hover, .search-form fieldset[disabled] .search-submit:hover, fieldset[disabled] section.contact form input:hover, section.contact form fieldset[disabled] input:hover,
+  fieldset[disabled] section.contact form textarea:hover,
+  section.contact form fieldset[disabled] textarea:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .search-form .search-submit:focus, .search-form fieldset[disabled] .search-submit:focus,
+  fieldset[disabled] section.contact form input:focus,
+  section.contact form fieldset[disabled] input:focus,
+  fieldset[disabled] section.contact form textarea:focus,
+  section.contact form fieldset[disabled] textarea:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .search-form .focus.search-submit, .search-form fieldset[disabled] .focus.search-submit, fieldset[disabled] section.contact form textarea.focus, section.contact form fieldset[disabled] textarea.focus, fieldset[disabled] section.contact form input.focus, section.contact form fieldset[disabled] input.focus {
     background-color: #fff;
     border-color: #ccc; }
-  .btn-default .badge, .search-form .search-submit .badge {
+  .btn-default .badge, .search-form .search-submit .badge, section.contact form textarea .badge, section.contact form input .badge {
     color: #fff;
     background-color: #333; }
 
@@ -3481,7 +3604,7 @@ tbody.collapse.in {
     margin: 9px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
-  .dropdown-menu > li > a {
+  .dropdown-menu > li > a, .dropdown-menu > li > .btn-default, .search-form .dropdown-menu > li > .search-submit, section.contact form .dropdown-menu > li > textarea, section.contact form .dropdown-menu > li > input {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -3490,20 +3613,32 @@ tbody.collapse.in {
     color: #333333;
     white-space: nowrap; }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:hover, .dropdown-menu > li > .btn-default:hover, .search-form .dropdown-menu > li > .search-submit:hover, section.contact form .dropdown-menu > li > input:hover,
+section.contact form .dropdown-menu > li > textarea:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > .btn-default:focus, .search-form .dropdown-menu > li > .search-submit:focus,
+section.contact form .dropdown-menu > li > input:focus,
+section.contact form .dropdown-menu > li > textarea:focus {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5; }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+.dropdown-menu > .active > a, .dropdown-menu > .active > .btn-default, .search-form .dropdown-menu > .active > .search-submit, section.contact form .dropdown-menu > .active > textarea, section.contact form .dropdown-menu > .active > input, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > .btn-default:hover, .search-form .dropdown-menu > .active > .search-submit:hover, section.contact form .dropdown-menu > .active > input:hover,
+section.contact form .dropdown-menu > .active > textarea:hover, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > .btn-default:focus, .search-form .dropdown-menu > .active > .search-submit:focus,
+section.contact form .dropdown-menu > .active > input:focus,
+section.contact form .dropdown-menu > .active > textarea:focus {
   color: #fff;
   text-decoration: none;
   outline: 0;
   background-color: #27ae60; }
 
-.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > .btn-default, .search-form .dropdown-menu > .disabled > .search-submit, section.contact form .dropdown-menu > .disabled > textarea, section.contact form .dropdown-menu > .disabled > input, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > .btn-default:hover, .search-form .dropdown-menu > .disabled > .search-submit:hover, section.contact form .dropdown-menu > .disabled > input:hover,
+section.contact form .dropdown-menu > .disabled > textarea:hover, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > .btn-default:focus, .search-form .dropdown-menu > .disabled > .search-submit:focus,
+section.contact form .dropdown-menu > .disabled > input:focus,
+section.contact form .dropdown-menu > .disabled > textarea:focus {
   color: #777777; }
-.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > .btn-default:hover, .search-form .dropdown-menu > .disabled > .search-submit:hover, section.contact form .dropdown-menu > .disabled > input:hover,
+section.contact form .dropdown-menu > .disabled > textarea:hover, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > .btn-default:focus, .search-form .dropdown-menu > .disabled > .search-submit:focus,
+section.contact form .dropdown-menu > .disabled > input:focus,
+section.contact form .dropdown-menu > .disabled > textarea:focus {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
@@ -3512,7 +3647,7 @@ tbody.collapse.in {
 
 .open > .dropdown-menu {
   display: block; }
-.open > a {
+.open > a, .open > .btn-default, .search-form .open > .search-submit, section.contact form .open > textarea, section.contact form .open > input {
   outline: 0; }
 
 .dropdown-menu-right {
@@ -3941,21 +4076,33 @@ tbody.collapse.in {
   .nav > li {
     position: relative;
     display: block; }
-    .nav > li > a {
+    .nav > li > a, .nav > li > .btn-default, .search-form .nav > li > .search-submit, section.contact form .nav > li > textarea, section.contact form .nav > li > input {
       position: relative;
       display: block;
       padding: 10px 15px; }
-      .nav > li > a:hover, .nav > li > a:focus {
+      .nav > li > a:hover, .nav > li > .btn-default:hover, .search-form .nav > li > .search-submit:hover, section.contact form .nav > li > input:hover,
+      section.contact form .nav > li > textarea:hover, .nav > li > a:focus, .nav > li > .btn-default:focus, .search-form .nav > li > .search-submit:focus,
+      section.contact form .nav > li > input:focus,
+      section.contact form .nav > li > textarea:focus {
         text-decoration: none;
         background-color: #eeeeee; }
-    .nav > li.disabled > a {
+    .nav > li.disabled > a, .nav > li.disabled > .btn-default, .search-form .nav > li.disabled > .search-submit, section.contact form .nav > li.disabled > textarea, section.contact form .nav > li.disabled > input {
       color: #777777; }
-      .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+      .nav > li.disabled > a:hover, .nav > li.disabled > .btn-default:hover, .search-form .nav > li.disabled > .search-submit:hover, section.contact form .nav > li.disabled > input:hover,
+      section.contact form .nav > li.disabled > textarea:hover, .nav > li.disabled > a:focus, .nav > li.disabled > .btn-default:focus, .search-form .nav > li.disabled > .search-submit:focus,
+      section.contact form .nav > li.disabled > input:focus,
+      section.contact form .nav > li.disabled > textarea:focus {
         color: #777777;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
-  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  .nav .open > a, .nav .open > .btn-default, .nav .search-form .open > .search-submit, .search-form .nav .open > .search-submit, .nav section.contact form .open > textarea, section.contact form .nav .open > textarea, .nav section.contact form .open > input, section.contact form .nav .open > input, .nav .open > a:hover, .nav .open > .btn-default:hover, .nav .search-form .open > .search-submit:hover, .search-form .nav .open > .search-submit:hover, .nav section.contact form .open > input:hover, section.contact form .nav .open > input:hover,
+  .nav section.contact form .open > textarea:hover,
+  section.contact form .nav .open > textarea:hover, .nav .open > a:focus, .nav .open > .btn-default:focus, .nav .search-form .open > .search-submit:focus, .search-form .nav .open > .search-submit:focus,
+  .nav section.contact form .open > input:focus,
+  section.contact form .nav .open > input:focus,
+  .nav section.contact form .open > textarea:focus,
+  section.contact form .nav .open > textarea:focus {
     background-color: #eeeeee;
     border-color: #27ae60; }
   .nav .nav-divider {
@@ -3963,7 +4110,7 @@ tbody.collapse.in {
     margin: 9px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
-  .nav > li > a > img {
+  .nav > li > a > img, .nav > li > .btn-default > img, .search-form .nav > li > .search-submit > img, section.contact form .nav > li > textarea > img, section.contact form .nav > li > input > img {
     max-width: none; }
 
 .nav-tabs {
@@ -3971,14 +4118,18 @@ tbody.collapse.in {
   .nav-tabs > li {
     float: left;
     margin-bottom: -1px; }
-    .nav-tabs > li > a {
+    .nav-tabs > li > a, .nav-tabs > li > .btn-default, .search-form .nav-tabs > li > .search-submit, section.contact form .nav-tabs > li > textarea, section.contact form .nav-tabs > li > input {
       margin-right: 2px;
       line-height: 1.42857;
       border: 1px solid transparent;
       border-radius: 4px 4px 0 0; }
-      .nav-tabs > li > a:hover {
+      .nav-tabs > li > a:hover, .nav-tabs > li > .btn-default:hover, .search-form .nav-tabs > li > .search-submit:hover, section.contact form .nav-tabs > li > input:hover,
+      section.contact form .nav-tabs > li > textarea:hover {
         border-color: #eeeeee #eeeeee #ddd; }
-    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    .nav-tabs > li.active > a, .nav-tabs > li.active > .btn-default, .search-form .nav-tabs > li.active > .search-submit, section.contact form .nav-tabs > li.active > textarea, section.contact form .nav-tabs > li.active > input, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > .btn-default:hover, .search-form .nav-tabs > li.active > .search-submit:hover, section.contact form .nav-tabs > li.active > input:hover,
+    section.contact form .nav-tabs > li.active > textarea:hover, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > .btn-default:focus, .search-form .nav-tabs > li.active > .search-submit:focus,
+    section.contact form .nav-tabs > li.active > input:focus,
+    section.contact form .nav-tabs > li.active > textarea:focus {
       color: #555555;
       background-color: #fff;
       border: 1px solid #ddd;
@@ -3987,11 +4138,14 @@ tbody.collapse.in {
 
 .nav-pills > li {
   float: left; }
-  .nav-pills > li > a {
+  .nav-pills > li > a, .nav-pills > li > .btn-default, .search-form .nav-pills > li > .search-submit, section.contact form .nav-pills > li > textarea, section.contact form .nav-pills > li > input {
     border-radius: 4px; }
   .nav-pills > li + li {
     margin-left: 2px; }
-  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  .nav-pills > li.active > a, .nav-pills > li.active > .btn-default, .search-form .nav-pills > li.active > .search-submit, section.contact form .nav-pills > li.active > textarea, section.contact form .nav-pills > li.active > input, .nav-pills > li.active > a:hover, .nav-pills > li.active > .btn-default:hover, .search-form .nav-pills > li.active > .search-submit:hover, section.contact form .nav-pills > li.active > input:hover,
+  section.contact form .nav-pills > li.active > textarea:hover, .nav-pills > li.active > a:focus, .nav-pills > li.active > .btn-default:focus, .search-form .nav-pills > li.active > .search-submit:focus,
+  section.contact form .nav-pills > li.active > input:focus,
+  section.contact form .nav-pills > li.active > textarea:focus {
     color: #fff;
     background-color: #27ae60; }
 
@@ -4005,7 +4159,7 @@ tbody.collapse.in {
   width: 100%; }
   .nav-justified > li, .nav-tabs.nav-justified > li {
     float: none; }
-    .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+    .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-justified > li > .btn-default, .search-form .nav-justified > li > .search-submit, section.contact form .nav-justified > li > textarea, section.contact form .nav-justified > li > input {
       text-align: center;
       margin-bottom: 5px; }
   .nav-justified > .dropdown .dropdown-menu {
@@ -4015,29 +4169,61 @@ tbody.collapse.in {
     .nav-justified > li, .nav-tabs.nav-justified > li {
       display: table-cell;
       width: 1%; }
-      .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+      .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-justified > li > .btn-default, .search-form .nav-justified > li > .search-submit, section.contact form .nav-justified > li > textarea, section.contact form .nav-justified > li > input {
         margin-bottom: 0; } }
 
 .nav-tabs-justified, .nav-tabs.nav-justified {
   border-bottom: 0; }
-  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs-justified > li > .btn-default, .nav-tabs.nav-justified > li > .btn-default, .search-form .nav-tabs-justified > li > .search-submit, .search-form .nav-tabs.nav-justified > li > .search-submit, section.contact form .nav-tabs-justified > li > textarea, section.contact form .nav-tabs.nav-justified > li > textarea, section.contact form .nav-tabs-justified > li > input, section.contact form .nav-tabs.nav-justified > li > input {
     margin-right: 0;
     border-radius: 4px; }
-  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a, .nav-tabs-justified > .active > .btn-default, .nav-tabs.nav-justified > .active > .btn-default, .search-form .nav-tabs-justified > .active > .search-submit, .search-form .nav-tabs.nav-justified > .active > .search-submit, section.contact form .nav-tabs-justified > .active > textarea, section.contact form .nav-tabs.nav-justified > .active > textarea, section.contact form .nav-tabs-justified > .active > input, section.contact form .nav-tabs.nav-justified > .active > input,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs-justified > .active > .btn-default:hover,
+  .nav-tabs.nav-justified > .active > .btn-default:hover,
+  .search-form .nav-tabs-justified > .active > .search-submit:hover,
+  .search-form .nav-tabs.nav-justified > .active > .search-submit:hover,
+  section.contact form .nav-tabs-justified > .active > input:hover,
+  section.contact form .nav-tabs.nav-justified > .active > input:hover,
+  section.contact form .nav-tabs-justified > .active > textarea:hover,
+  section.contact form .nav-tabs.nav-justified > .active > textarea:hover,
   .nav-tabs-justified > .active > a:focus,
-  .nav-tabs.nav-justified > .active > a:focus {
+  .nav-tabs.nav-justified > .active > a:focus,
+  .nav-tabs-justified > .active > .btn-default:focus,
+  .nav-tabs.nav-justified > .active > .btn-default:focus,
+  .search-form .nav-tabs-justified > .active > .search-submit:focus,
+  .search-form .nav-tabs.nav-justified > .active > .search-submit:focus,
+  section.contact form .nav-tabs-justified > .active > input:focus,
+  section.contact form .nav-tabs.nav-justified > .active > input:focus,
+  section.contact form .nav-tabs-justified > .active > textarea:focus,
+  section.contact form .nav-tabs.nav-justified > .active > textarea:focus {
     border: 1px solid #ddd; }
   @media (min-width: 768px) {
-    .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+    .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs-justified > li > .btn-default, .nav-tabs.nav-justified > li > .btn-default, .search-form .nav-tabs-justified > li > .search-submit, .search-form .nav-tabs.nav-justified > li > .search-submit, section.contact form .nav-tabs-justified > li > textarea, section.contact form .nav-tabs.nav-justified > li > textarea, section.contact form .nav-tabs-justified > li > input, section.contact form .nav-tabs.nav-justified > li > input {
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
-    .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+    .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a, .nav-tabs-justified > .active > .btn-default, .nav-tabs.nav-justified > .active > .btn-default, .search-form .nav-tabs-justified > .active > .search-submit, .search-form .nav-tabs.nav-justified > .active > .search-submit, section.contact form .nav-tabs-justified > .active > textarea, section.contact form .nav-tabs.nav-justified > .active > textarea, section.contact form .nav-tabs-justified > .active > input, section.contact form .nav-tabs.nav-justified > .active > input,
     .nav-tabs-justified > .active > a:hover,
     .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs-justified > .active > .btn-default:hover,
+    .nav-tabs.nav-justified > .active > .btn-default:hover,
+    .search-form .nav-tabs-justified > .active > .search-submit:hover,
+    .search-form .nav-tabs.nav-justified > .active > .search-submit:hover,
+    section.contact form .nav-tabs-justified > .active > input:hover,
+    section.contact form .nav-tabs.nav-justified > .active > input:hover,
+    section.contact form .nav-tabs-justified > .active > textarea:hover,
+    section.contact form .nav-tabs.nav-justified > .active > textarea:hover,
     .nav-tabs-justified > .active > a:focus,
-    .nav-tabs.nav-justified > .active > a:focus {
+    .nav-tabs.nav-justified > .active > a:focus,
+    .nav-tabs-justified > .active > .btn-default:focus,
+    .nav-tabs.nav-justified > .active > .btn-default:focus,
+    .search-form .nav-tabs-justified > .active > .search-submit:focus,
+    .search-form .nav-tabs.nav-justified > .active > .search-submit:focus,
+    section.contact form .nav-tabs-justified > .active > input:focus,
+    section.contact form .nav-tabs.nav-justified > .active > input:focus,
+    section.contact form .nav-tabs-justified > .active > textarea:focus,
+    section.contact form .nav-tabs.nav-justified > .active > textarea:focus {
       border-bottom-color: #fff; } }
 
 .tab-content > .tab-pane {
@@ -4192,7 +4378,7 @@ tbody.collapse.in {
 
 .navbar-nav {
   margin: 7.5px -15px; }
-  .navbar-nav > li > a {
+  .navbar-nav > li > a, .navbar-nav > li > .btn-default, .search-form .navbar-nav > li > .search-submit, section.contact form .navbar-nav > li > textarea, section.contact form .navbar-nav > li > input {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 20px; }
@@ -4205,12 +4391,18 @@ tbody.collapse.in {
       background-color: transparent;
       border: 0;
       box-shadow: none; }
-      .navbar-nav .open .dropdown-menu > li > a,
+      .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu > li > .btn-default, .navbar-nav .open .search-form .dropdown-menu > li > .search-submit, .search-form .navbar-nav .open .dropdown-menu > li > .search-submit, .navbar-nav .open section.contact form .dropdown-menu > li > textarea, section.contact form .navbar-nav .open .dropdown-menu > li > textarea, .navbar-nav .open section.contact form .dropdown-menu > li > input, section.contact form .navbar-nav .open .dropdown-menu > li > input,
       .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
-      .navbar-nav .open .dropdown-menu > li > a {
+      .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu > li > .btn-default, .navbar-nav .open .search-form .dropdown-menu > li > .search-submit, .search-form .navbar-nav .open .dropdown-menu > li > .search-submit, .navbar-nav .open section.contact form .dropdown-menu > li > textarea, section.contact form .navbar-nav .open .dropdown-menu > li > textarea, .navbar-nav .open section.contact form .dropdown-menu > li > input, section.contact form .navbar-nav .open .dropdown-menu > li > input {
         line-height: 20px; }
-        .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+        .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > .btn-default:hover, .navbar-nav .open .search-form .dropdown-menu > li > .search-submit:hover, .search-form .navbar-nav .open .dropdown-menu > li > .search-submit:hover, .navbar-nav .open section.contact form .dropdown-menu > li > input:hover, section.contact form .navbar-nav .open .dropdown-menu > li > input:hover,
+        .navbar-nav .open section.contact form .dropdown-menu > li > textarea:hover,
+        section.contact form .navbar-nav .open .dropdown-menu > li > textarea:hover, .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open .dropdown-menu > li > .btn-default:focus, .navbar-nav .open .search-form .dropdown-menu > li > .search-submit:focus, .search-form .navbar-nav .open .dropdown-menu > li > .search-submit:focus,
+        .navbar-nav .open section.contact form .dropdown-menu > li > input:focus,
+        section.contact form .navbar-nav .open .dropdown-menu > li > input:focus,
+        .navbar-nav .open section.contact form .dropdown-menu > li > textarea:focus,
+        section.contact form .navbar-nav .open .dropdown-menu > li > textarea:focus {
           background-image: none; } }
   @media (min-width: 768px) {
     .navbar-nav {
@@ -4218,7 +4410,7 @@ tbody.collapse.in {
       margin: 0; }
       .navbar-nav > li {
         float: left; }
-        .navbar-nav > li > a {
+        .navbar-nav > li > a, .navbar-nav > li > .btn-default, .search-form .navbar-nav > li > .search-submit, section.contact form .navbar-nav > li > textarea, section.contact form .navbar-nav > li > input {
           padding-top: 15px;
           padding-bottom: 15px; } }
 
@@ -4358,15 +4550,33 @@ tbody.collapse.in {
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #777; }
-  .navbar-default .navbar-nav > li > a {
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > .btn-default, .navbar-default .search-form .navbar-nav > li > .search-submit, .search-form .navbar-default .navbar-nav > li > .search-submit, .navbar-default section.contact form .navbar-nav > li > textarea, section.contact form .navbar-default .navbar-nav > li > textarea, .navbar-default section.contact form .navbar-nav > li > input, section.contact form .navbar-default .navbar-nav > li > input {
     color: #777; }
-    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > .btn-default:hover, .navbar-default .search-form .navbar-nav > li > .search-submit:hover, .search-form .navbar-default .navbar-nav > li > .search-submit:hover, .navbar-default section.contact form .navbar-nav > li > input:hover, section.contact form .navbar-default .navbar-nav > li > input:hover,
+    .navbar-default section.contact form .navbar-nav > li > textarea:hover,
+    section.contact form .navbar-default .navbar-nav > li > textarea:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > .btn-default:focus, .navbar-default .search-form .navbar-nav > li > .search-submit:focus, .search-form .navbar-default .navbar-nav > li > .search-submit:focus,
+    .navbar-default section.contact form .navbar-nav > li > input:focus,
+    section.contact form .navbar-default .navbar-nav > li > input:focus,
+    .navbar-default section.contact form .navbar-nav > li > textarea:focus,
+    section.contact form .navbar-default .navbar-nav > li > textarea:focus {
       color: #333;
       background-color: transparent; }
-  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .btn-default, .navbar-default .search-form .navbar-nav > .active > .search-submit, .search-form .navbar-default .navbar-nav > .active > .search-submit, .navbar-default section.contact form .navbar-nav > .active > textarea, section.contact form .navbar-default .navbar-nav > .active > textarea, .navbar-default section.contact form .navbar-nav > .active > input, section.contact form .navbar-default .navbar-nav > .active > input, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > .btn-default:hover, .navbar-default .search-form .navbar-nav > .active > .search-submit:hover, .search-form .navbar-default .navbar-nav > .active > .search-submit:hover, .navbar-default section.contact form .navbar-nav > .active > input:hover, section.contact form .navbar-default .navbar-nav > .active > input:hover,
+  .navbar-default section.contact form .navbar-nav > .active > textarea:hover,
+  section.contact form .navbar-default .navbar-nav > .active > textarea:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > .btn-default:focus, .navbar-default .search-form .navbar-nav > .active > .search-submit:focus, .search-form .navbar-default .navbar-nav > .active > .search-submit:focus,
+  .navbar-default section.contact form .navbar-nav > .active > input:focus,
+  section.contact form .navbar-default .navbar-nav > .active > input:focus,
+  .navbar-default section.contact form .navbar-nav > .active > textarea:focus,
+  section.contact form .navbar-default .navbar-nav > .active > textarea:focus {
     color: #555;
     background-color: #e7e7e7; }
-  .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+  .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > .btn-default, .navbar-default .search-form .navbar-nav > .disabled > .search-submit, .search-form .navbar-default .navbar-nav > .disabled > .search-submit, .navbar-default section.contact form .navbar-nav > .disabled > textarea, section.contact form .navbar-default .navbar-nav > .disabled > textarea, .navbar-default section.contact form .navbar-nav > .disabled > input, section.contact form .navbar-default .navbar-nav > .disabled > input, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > .btn-default:hover, .navbar-default .search-form .navbar-nav > .disabled > .search-submit:hover, .search-form .navbar-default .navbar-nav > .disabled > .search-submit:hover, .navbar-default section.contact form .navbar-nav > .disabled > input:hover, section.contact form .navbar-default .navbar-nav > .disabled > input:hover,
+  .navbar-default section.contact form .navbar-nav > .disabled > textarea:hover,
+  section.contact form .navbar-default .navbar-nav > .disabled > textarea:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default .navbar-nav > .disabled > .btn-default:focus, .navbar-default .search-form .navbar-nav > .disabled > .search-submit:focus, .search-form .navbar-default .navbar-nav > .disabled > .search-submit:focus,
+  .navbar-default section.contact form .navbar-nav > .disabled > input:focus,
+  section.contact form .navbar-default .navbar-nav > .disabled > input:focus,
+  .navbar-default section.contact form .navbar-nav > .disabled > textarea:focus,
+  section.contact form .navbar-default .navbar-nav > .disabled > textarea:focus {
     color: #ccc;
     background-color: transparent; }
   .navbar-default .navbar-toggle {
@@ -4378,19 +4588,43 @@ tbody.collapse.in {
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
     border-color: #e7e7e7; }
-  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > .btn-default, .navbar-default .search-form .navbar-nav > .open > .search-submit, .search-form .navbar-default .navbar-nav > .open > .search-submit, .navbar-default section.contact form .navbar-nav > .open > textarea, section.contact form .navbar-default .navbar-nav > .open > textarea, .navbar-default section.contact form .navbar-nav > .open > input, section.contact form .navbar-default .navbar-nav > .open > input, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > .btn-default:hover, .navbar-default .search-form .navbar-nav > .open > .search-submit:hover, .search-form .navbar-default .navbar-nav > .open > .search-submit:hover, .navbar-default section.contact form .navbar-nav > .open > input:hover, section.contact form .navbar-default .navbar-nav > .open > input:hover,
+  .navbar-default section.contact form .navbar-nav > .open > textarea:hover,
+  section.contact form .navbar-default .navbar-nav > .open > textarea:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > .btn-default:focus, .navbar-default .search-form .navbar-nav > .open > .search-submit:focus, .search-form .navbar-default .navbar-nav > .open > .search-submit:focus,
+  .navbar-default section.contact form .navbar-nav > .open > input:focus,
+  section.contact form .navbar-default .navbar-nav > .open > input:focus,
+  .navbar-default section.contact form .navbar-nav > .open > textarea:focus,
+  section.contact form .navbar-default .navbar-nav > .open > textarea:focus {
     background-color: #e7e7e7;
     color: #555; }
   @media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .dropdown-menu > li > .btn-default, .navbar-default .navbar-nav .open .search-form .dropdown-menu > li > .search-submit, .search-form .navbar-default .navbar-nav .open .dropdown-menu > li > .search-submit, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > li > textarea, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > li > textarea, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > li > input, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > li > input {
       color: #777; }
-      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > .btn-default:hover, .navbar-default .navbar-nav .open .search-form .dropdown-menu > li > .search-submit:hover, .search-form .navbar-default .navbar-nav .open .dropdown-menu > li > .search-submit:hover, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > li > input:hover, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > li > input:hover,
+      .navbar-default .navbar-nav .open section.contact form .dropdown-menu > li > textarea:hover,
+      section.contact form .navbar-default .navbar-nav .open .dropdown-menu > li > textarea:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > .btn-default:focus, .navbar-default .navbar-nav .open .search-form .dropdown-menu > li > .search-submit:focus, .search-form .navbar-default .navbar-nav .open .dropdown-menu > li > .search-submit:focus,
+      .navbar-default .navbar-nav .open section.contact form .dropdown-menu > li > input:focus,
+      section.contact form .navbar-default .navbar-nav .open .dropdown-menu > li > input:focus,
+      .navbar-default .navbar-nav .open section.contact form .dropdown-menu > li > textarea:focus,
+      section.contact form .navbar-default .navbar-nav .open .dropdown-menu > li > textarea:focus {
         color: #333;
         background-color: transparent; }
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > .btn-default, .navbar-default .navbar-nav .open .search-form .dropdown-menu > .active > .search-submit, .search-form .navbar-default .navbar-nav .open .dropdown-menu > .active > .search-submit, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .active > textarea, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .active > textarea, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .active > input, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .active > input, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > .btn-default:hover, .navbar-default .navbar-nav .open .search-form .dropdown-menu > .active > .search-submit:hover, .search-form .navbar-default .navbar-nav .open .dropdown-menu > .active > .search-submit:hover, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .active > input:hover, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .active > input:hover,
+    .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .active > textarea:hover,
+    section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .active > textarea:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > .btn-default:focus, .navbar-default .navbar-nav .open .search-form .dropdown-menu > .active > .search-submit:focus, .search-form .navbar-default .navbar-nav .open .dropdown-menu > .active > .search-submit:focus,
+    .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .active > input:focus,
+    section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .active > input:focus,
+    .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .active > textarea:focus,
+    section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .active > textarea:focus {
       color: #555;
       background-color: #e7e7e7; }
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .btn-default, .navbar-default .navbar-nav .open .search-form .dropdown-menu > .disabled > .search-submit, .search-form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .search-submit, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .disabled > textarea, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > textarea, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .disabled > input, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > input, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .btn-default:hover, .navbar-default .navbar-nav .open .search-form .dropdown-menu > .disabled > .search-submit:hover, .search-form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .search-submit:hover, .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .disabled > input:hover, section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > input:hover,
+    .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .disabled > textarea:hover,
+    section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > textarea:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .btn-default:focus, .navbar-default .navbar-nav .open .search-form .dropdown-menu > .disabled > .search-submit:focus, .search-form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .search-submit:focus,
+    .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .disabled > input:focus,
+    section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > input:focus,
+    .navbar-default .navbar-nav .open section.contact form .dropdown-menu > .disabled > textarea:focus,
+    section.contact form .navbar-default .navbar-nav .open .dropdown-menu > .disabled > textarea:focus {
       color: #ccc;
       background-color: transparent; } }
   .navbar-default .navbar-link {
@@ -4414,15 +4648,33 @@ tbody.collapse.in {
       background-color: transparent; }
   .navbar-inverse .navbar-text {
     color: #9d9d9d; }
-  .navbar-inverse .navbar-nav > li > a {
+  .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > .btn-default, .navbar-inverse .search-form .navbar-nav > li > .search-submit, .search-form .navbar-inverse .navbar-nav > li > .search-submit, .navbar-inverse section.contact form .navbar-nav > li > textarea, section.contact form .navbar-inverse .navbar-nav > li > textarea, .navbar-inverse section.contact form .navbar-nav > li > input, section.contact form .navbar-inverse .navbar-nav > li > input {
     color: #9d9d9d; }
-    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > .btn-default:hover, .navbar-inverse .search-form .navbar-nav > li > .search-submit:hover, .search-form .navbar-inverse .navbar-nav > li > .search-submit:hover, .navbar-inverse section.contact form .navbar-nav > li > input:hover, section.contact form .navbar-inverse .navbar-nav > li > input:hover,
+    .navbar-inverse section.contact form .navbar-nav > li > textarea:hover,
+    section.contact form .navbar-inverse .navbar-nav > li > textarea:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > .btn-default:focus, .navbar-inverse .search-form .navbar-nav > li > .search-submit:focus, .search-form .navbar-inverse .navbar-nav > li > .search-submit:focus,
+    .navbar-inverse section.contact form .navbar-nav > li > input:focus,
+    section.contact form .navbar-inverse .navbar-nav > li > input:focus,
+    .navbar-inverse section.contact form .navbar-nav > li > textarea:focus,
+    section.contact form .navbar-inverse .navbar-nav > li > textarea:focus {
       color: #fff;
       background-color: transparent; }
-  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > .btn-default, .navbar-inverse .search-form .navbar-nav > .active > .search-submit, .search-form .navbar-inverse .navbar-nav > .active > .search-submit, .navbar-inverse section.contact form .navbar-nav > .active > textarea, section.contact form .navbar-inverse .navbar-nav > .active > textarea, .navbar-inverse section.contact form .navbar-nav > .active > input, section.contact form .navbar-inverse .navbar-nav > .active > input, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > .btn-default:hover, .navbar-inverse .search-form .navbar-nav > .active > .search-submit:hover, .search-form .navbar-inverse .navbar-nav > .active > .search-submit:hover, .navbar-inverse section.contact form .navbar-nav > .active > input:hover, section.contact form .navbar-inverse .navbar-nav > .active > input:hover,
+  .navbar-inverse section.contact form .navbar-nav > .active > textarea:hover,
+  section.contact form .navbar-inverse .navbar-nav > .active > textarea:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > .btn-default:focus, .navbar-inverse .search-form .navbar-nav > .active > .search-submit:focus, .search-form .navbar-inverse .navbar-nav > .active > .search-submit:focus,
+  .navbar-inverse section.contact form .navbar-nav > .active > input:focus,
+  section.contact form .navbar-inverse .navbar-nav > .active > input:focus,
+  .navbar-inverse section.contact form .navbar-nav > .active > textarea:focus,
+  section.contact form .navbar-inverse .navbar-nav > .active > textarea:focus {
     color: #fff;
     background-color: #090909; }
-  .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+  .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > .btn-default, .navbar-inverse .search-form .navbar-nav > .disabled > .search-submit, .search-form .navbar-inverse .navbar-nav > .disabled > .search-submit, .navbar-inverse section.contact form .navbar-nav > .disabled > textarea, section.contact form .navbar-inverse .navbar-nav > .disabled > textarea, .navbar-inverse section.contact form .navbar-nav > .disabled > input, section.contact form .navbar-inverse .navbar-nav > .disabled > input, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > .btn-default:hover, .navbar-inverse .search-form .navbar-nav > .disabled > .search-submit:hover, .search-form .navbar-inverse .navbar-nav > .disabled > .search-submit:hover, .navbar-inverse section.contact form .navbar-nav > .disabled > input:hover, section.contact form .navbar-inverse .navbar-nav > .disabled > input:hover,
+  .navbar-inverse section.contact form .navbar-nav > .disabled > textarea:hover,
+  section.contact form .navbar-inverse .navbar-nav > .disabled > textarea:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse .navbar-nav > .disabled > .btn-default:focus, .navbar-inverse .search-form .navbar-nav > .disabled > .search-submit:focus, .search-form .navbar-inverse .navbar-nav > .disabled > .search-submit:focus,
+  .navbar-inverse section.contact form .navbar-nav > .disabled > input:focus,
+  section.contact form .navbar-inverse .navbar-nav > .disabled > input:focus,
+  .navbar-inverse section.contact form .navbar-nav > .disabled > textarea:focus,
+  section.contact form .navbar-inverse .navbar-nav > .disabled > textarea:focus {
     color: #444;
     background-color: transparent; }
   .navbar-inverse .navbar-toggle {
@@ -4434,7 +4686,13 @@ tbody.collapse.in {
   .navbar-inverse .navbar-collapse,
   .navbar-inverse .navbar-form {
     border-color: #101010; }
-  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > .btn-default, .navbar-inverse .search-form .navbar-nav > .open > .search-submit, .search-form .navbar-inverse .navbar-nav > .open > .search-submit, .navbar-inverse section.contact form .navbar-nav > .open > textarea, section.contact form .navbar-inverse .navbar-nav > .open > textarea, .navbar-inverse section.contact form .navbar-nav > .open > input, section.contact form .navbar-inverse .navbar-nav > .open > input, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > .btn-default:hover, .navbar-inverse .search-form .navbar-nav > .open > .search-submit:hover, .search-form .navbar-inverse .navbar-nav > .open > .search-submit:hover, .navbar-inverse section.contact form .navbar-nav > .open > input:hover, section.contact form .navbar-inverse .navbar-nav > .open > input:hover,
+  .navbar-inverse section.contact form .navbar-nav > .open > textarea:hover,
+  section.contact form .navbar-inverse .navbar-nav > .open > textarea:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > .btn-default:focus, .navbar-inverse .search-form .navbar-nav > .open > .search-submit:focus, .search-form .navbar-inverse .navbar-nav > .open > .search-submit:focus,
+  .navbar-inverse section.contact form .navbar-nav > .open > input:focus,
+  section.contact form .navbar-inverse .navbar-nav > .open > input:focus,
+  .navbar-inverse section.contact form .navbar-nav > .open > textarea:focus,
+  section.contact form .navbar-inverse .navbar-nav > .open > textarea:focus {
     background-color: #090909;
     color: #fff; }
   @media (max-width: 767px) {
@@ -4442,15 +4700,33 @@ tbody.collapse.in {
       border-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
       background-color: #090909; }
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .btn-default, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > li > .search-submit, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > li > .search-submit, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > li > textarea, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > li > textarea, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > li > input, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > li > input {
       color: #9d9d9d; }
-      .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+      .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .btn-default:hover, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > li > .search-submit:hover, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > li > .search-submit:hover, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > li > input:hover, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > li > input:hover,
+      .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > li > textarea:hover,
+      section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > li > textarea:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .btn-default:focus, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > li > .search-submit:focus, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > li > .search-submit:focus,
+      .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > li > input:focus,
+      section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > li > input:focus,
+      .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > li > textarea:focus,
+      section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > li > textarea:focus {
         color: #fff;
         background-color: transparent; }
-    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .btn-default, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > .active > .search-submit, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .search-submit, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .active > textarea, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > textarea, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .active > input, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > input, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .btn-default:hover, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > .active > .search-submit:hover, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .search-submit:hover, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .active > input:hover, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > input:hover,
+    .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .active > textarea:hover,
+    section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > textarea:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .btn-default:focus, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > .active > .search-submit:focus, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .search-submit:focus,
+    .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .active > input:focus,
+    section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > input:focus,
+    .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .active > textarea:focus,
+    section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .active > textarea:focus {
       color: #fff;
       background-color: #090909; }
-    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .btn-default, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > .disabled > .search-submit, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .search-submit, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .disabled > textarea, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > textarea, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .disabled > input, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > input, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .btn-default:hover, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > .disabled > .search-submit:hover, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .search-submit:hover, .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .disabled > input:hover, section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > input:hover,
+    .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .disabled > textarea:hover,
+    section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > textarea:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .btn-default:focus, .navbar-inverse .navbar-nav .open .search-form .dropdown-menu > .disabled > .search-submit:focus, .search-form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .search-submit:focus,
+    .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .disabled > input:focus,
+    section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > input:focus,
+    .navbar-inverse .navbar-nav .open section.contact form .dropdown-menu > .disabled > textarea:focus,
+    section.contact form .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > textarea:focus {
       color: #444;
       background-color: transparent; } }
   .navbar-inverse .navbar-link {
@@ -4486,7 +4762,7 @@ tbody.collapse.in {
   border-radius: 4px; }
   .pagination > li {
     display: inline; }
-    .pagination > li > a,
+    .pagination > li > a, .pagination > li > .btn-default, .search-form .pagination > li > .search-submit, section.contact form .pagination > li > textarea, section.contact form .pagination > li > input,
     .pagination > li > span {
       position: relative;
       float: left;
@@ -4497,23 +4773,29 @@ tbody.collapse.in {
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
-    .pagination > li:first-child > a,
+    .pagination > li:first-child > a, .pagination > li:first-child > .btn-default, .search-form .pagination > li:first-child > .search-submit, section.contact form .pagination > li:first-child > textarea, section.contact form .pagination > li:first-child > input,
     .pagination > li:first-child > span {
       margin-left: 0;
       border-bottom-left-radius: 4px;
       border-top-left-radius: 4px; }
-    .pagination > li:last-child > a,
+    .pagination > li:last-child > a, .pagination > li:last-child > .btn-default, .search-form .pagination > li:last-child > .search-submit, section.contact form .pagination > li:last-child > textarea, section.contact form .pagination > li:last-child > input,
     .pagination > li:last-child > span {
       border-bottom-right-radius: 4px;
       border-top-right-radius: 4px; }
-  .pagination > li > a:hover, .pagination > li > a:focus,
+  .pagination > li > a:hover, .pagination > li > .btn-default:hover, .search-form .pagination > li > .search-submit:hover, section.contact form .pagination > li > input:hover,
+  section.contact form .pagination > li > textarea:hover, .pagination > li > a:focus, .pagination > li > .btn-default:focus, .search-form .pagination > li > .search-submit:focus,
+  section.contact form .pagination > li > input:focus,
+  section.contact form .pagination > li > textarea:focus,
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 2;
     color: #19703e;
     background-color: #eeeeee;
     border-color: #ddd; }
-  .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+  .pagination > .active > a, .pagination > .active > .btn-default, .search-form .pagination > .active > .search-submit, section.contact form .pagination > .active > textarea, section.contact form .pagination > .active > input, .pagination > .active > a:hover, .pagination > .active > .btn-default:hover, .search-form .pagination > .active > .search-submit:hover, section.contact form .pagination > .active > input:hover,
+  section.contact form .pagination > .active > textarea:hover, .pagination > .active > a:focus, .pagination > .active > .btn-default:focus, .search-form .pagination > .active > .search-submit:focus,
+  section.contact form .pagination > .active > input:focus,
+  section.contact form .pagination > .active > textarea:focus,
   .pagination > .active > span,
   .pagination > .active > span:hover,
   .pagination > .active > span:focus {
@@ -4526,37 +4808,49 @@ tbody.collapse.in {
   .pagination > .disabled > span:hover,
   .pagination > .disabled > span:focus,
   .pagination > .disabled > a,
+  .pagination > .disabled > .btn-default,
+  .search-form .pagination > .disabled > .search-submit,
+  section.contact form .pagination > .disabled > textarea,
+  section.contact form .pagination > .disabled > input,
   .pagination > .disabled > a:hover,
-  .pagination > .disabled > a:focus {
+  .pagination > .disabled > .btn-default:hover,
+  .search-form .pagination > .disabled > .search-submit:hover,
+  section.contact form .pagination > .disabled > input:hover,
+  section.contact form .pagination > .disabled > textarea:hover,
+  .pagination > .disabled > a:focus,
+  .pagination > .disabled > .btn-default:focus,
+  .search-form .pagination > .disabled > .search-submit:focus,
+  section.contact form .pagination > .disabled > input:focus,
+  section.contact form .pagination > .disabled > textarea:focus {
     color: #777777;
     background-color: #fff;
     border-color: #ddd;
     cursor: not-allowed; }
 
-.pagination-lg > li > a,
+.pagination-lg > li > a, .pagination-lg > li > .btn-default, .search-form .pagination-lg > li > .search-submit, section.contact form .pagination-lg > li > textarea, section.contact form .pagination-lg > li > input,
 .pagination-lg > li > span {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333; }
-.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > a, .pagination-lg > li:first-child > .btn-default, .search-form .pagination-lg > li:first-child > .search-submit, section.contact form .pagination-lg > li:first-child > textarea, section.contact form .pagination-lg > li:first-child > input,
 .pagination-lg > li:first-child > span {
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px; }
-.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > a, .pagination-lg > li:last-child > .btn-default, .search-form .pagination-lg > li:last-child > .search-submit, section.contact form .pagination-lg > li:last-child > textarea, section.contact form .pagination-lg > li:last-child > input,
 .pagination-lg > li:last-child > span {
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px; }
 
-.pagination-sm > li > a,
+.pagination-sm > li > a, .pagination-sm > li > .btn-default, .search-form .pagination-sm > li > .search-submit, section.contact form .pagination-sm > li > textarea, section.contact form .pagination-sm > li > input,
 .pagination-sm > li > span {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5; }
-.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > a, .pagination-sm > li:first-child > .btn-default, .search-form .pagination-sm > li:first-child > .search-submit, section.contact form .pagination-sm > li:first-child > textarea, section.contact form .pagination-sm > li:first-child > input,
 .pagination-sm > li:first-child > span {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px; }
-.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > a, .pagination-sm > li:last-child > .btn-default, .search-form .pagination-sm > li:last-child > .search-submit, section.contact form .pagination-sm > li:last-child > textarea, section.contact form .pagination-sm > li:last-child > input,
 .pagination-sm > li:last-child > span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px; }
@@ -4573,26 +4867,49 @@ tbody.collapse.in {
     clear: both; }
   .pager li {
     display: inline; }
-    .pager li > a,
+    .pager li > a, .pager li > .btn-default, .pager .search-form li > .search-submit, .search-form .pager li > .search-submit, .pager section.contact form li > textarea, section.contact form .pager li > textarea, .pager section.contact form li > input, section.contact form .pager li > input,
     .pager li > span {
       display: inline-block;
       padding: 5px 14px;
       background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 15px; }
-    .pager li > a:hover,
-    .pager li > a:focus {
+    .pager li > a:hover, .pager li > .btn-default:hover, .pager .search-form li > .search-submit:hover, .search-form .pager li > .search-submit:hover, .pager section.contact form li > input:hover, section.contact form .pager li > input:hover,
+    .pager section.contact form li > textarea:hover,
+    section.contact form .pager li > textarea:hover,
+    .pager li > a:focus,
+    .pager li > .btn-default:focus,
+    .pager .search-form li > .search-submit:focus,
+    .search-form .pager li > .search-submit:focus,
+    .pager section.contact form li > input:focus,
+    section.contact form .pager li > input:focus,
+    .pager section.contact form li > textarea:focus,
+    section.contact form .pager li > textarea:focus {
       text-decoration: none;
       background-color: #eeeeee; }
-  .pager .next > a,
+  .pager .next > a, .pager .next > .btn-default, .pager .search-form .next > .search-submit, .search-form .pager .next > .search-submit, .pager section.contact form .next > textarea, section.contact form .pager .next > textarea, .pager section.contact form .next > input, section.contact form .pager .next > input,
   .pager .next > span {
     float: right; }
-  .pager .previous > a,
+  .pager .previous > a, .pager .previous > .btn-default, .pager .search-form .previous > .search-submit, .search-form .pager .previous > .search-submit, .pager section.contact form .previous > textarea, section.contact form .pager .previous > textarea, .pager section.contact form .previous > input, section.contact form .pager .previous > input,
   .pager .previous > span {
     float: left; }
-  .pager .disabled > a,
+  .pager .disabled > a, .pager .disabled > .btn-default, .pager .search-form .disabled > .search-submit, .search-form .pager .disabled > .search-submit, .pager section.contact form .disabled > textarea, section.contact form .pager .disabled > textarea, .pager section.contact form .disabled > input, section.contact form .pager .disabled > input,
   .pager .disabled > a:hover,
+  .pager .disabled > .btn-default:hover,
+  .pager .search-form .disabled > .search-submit:hover,
+  .search-form .pager .disabled > .search-submit:hover,
+  .pager section.contact form .disabled > input:hover,
+  section.contact form .pager .disabled > input:hover,
+  .pager section.contact form .disabled > textarea:hover,
+  section.contact form .pager .disabled > textarea:hover,
   .pager .disabled > a:focus,
+  .pager .disabled > .btn-default:focus,
+  .pager .search-form .disabled > .search-submit:focus,
+  .search-form .pager .disabled > .search-submit:focus,
+  .pager section.contact form .disabled > input:focus,
+  section.contact form .pager .disabled > input:focus,
+  .pager section.contact form .disabled > textarea:focus,
+  section.contact form .pager .disabled > textarea:focus,
   .pager .disabled > span {
     color: #777777;
     background-color: #fff;
@@ -4615,7 +4932,10 @@ tbody.collapse.in {
     position: relative;
     top: -1px; }
 
-a.label:hover, a.label:focus {
+a.label:hover, .label.btn-default:hover, .search-form .label.search-submit:hover, section.contact form input.label:hover,
+section.contact form textarea.label:hover, a.label:focus, .label.btn-default:focus, .search-form .label.search-submit:focus,
+section.contact form input.label:focus,
+section.contact form textarea.label:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer; }
@@ -4671,17 +4991,20 @@ a.label:hover, a.label:focus {
   .btn-xs .badge, .btn-group-xs > .btn .badge, .comment-form .btn-group-xs > input[type="submit"] .badge, .search-form .btn-group-xs > .search-submit .badge, .btn-group-xs > .btn .badge, .comment-form .btn-group-xs > input[type="submit"] .badge, .search-form .btn-group-xs > .search-submit .badge {
     top: 0;
     padding: 1px 5px; }
-  .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  .list-group-item.active > .badge, .nav-pills > .active > a > .badge, .nav-pills > .active > .btn-default > .badge, .search-form .nav-pills > .active > .search-submit > .badge, section.contact form .nav-pills > .active > textarea > .badge, section.contact form .nav-pills > .active > input > .badge {
     color: #27ae60;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
   .list-group-item > .badge + .badge {
     margin-right: 5px; }
-  .nav-pills > li > a > .badge {
+  .nav-pills > li > a > .badge, .nav-pills > li > .btn-default > .badge, .search-form .nav-pills > li > .search-submit > .badge, section.contact form .nav-pills > li > textarea > .badge, section.contact form .nav-pills > li > input > .badge {
     margin-left: 3px; }
 
-a.badge:hover, a.badge:focus {
+a.badge:hover, .badge.btn-default:hover, .search-form .badge.search-submit:hover, section.contact form input.badge:hover,
+section.contact form textarea.badge:hover, a.badge:focus, .badge.btn-default:focus, .search-form .badge.search-submit:focus,
+section.contact form input.badge:focus,
+section.contact form textarea.badge:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer; }
@@ -4731,7 +5054,21 @@ a.badge:hover, a.badge:focus {
   transition: border 0.2s ease-in-out; }
   .thumbnail > img, .wp-caption > img,
   .thumbnail a > img,
-  .wp-caption a > img {
+  .wp-caption a > img,
+  .thumbnail .btn-default > img,
+  .wp-caption .btn-default > img,
+  .thumbnail .search-form .search-submit > img,
+  .search-form .thumbnail .search-submit > img,
+  .wp-caption .search-form .search-submit > img,
+  .search-form .wp-caption .search-submit > img,
+  .thumbnail section.contact form textarea > img,
+  section.contact form .thumbnail textarea > img,
+  .wp-caption section.contact form textarea > img,
+  section.contact form .wp-caption textarea > img,
+  .thumbnail section.contact form input > img,
+  section.contact form .thumbnail input > img,
+  .wp-caption section.contact form input > img,
+  section.contact form .wp-caption input > img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -4741,11 +5078,29 @@ a.badge:hover, a.badge:focus {
     padding: 9px;
     color: #333333; }
 
-a.thumbnail:hover, a.wp-caption:hover,
+a.thumbnail:hover, a.wp-caption:hover, .wp-caption.btn-default:hover, .search-form .wp-caption.search-submit:hover, section.contact form input.wp-caption:hover,
+section.contact form textarea.wp-caption:hover, .thumbnail.btn-default:hover, .search-form .thumbnail.search-submit:hover, section.contact form input.thumbnail:hover,
+section.contact form textarea.thumbnail:hover,
 a.thumbnail:focus,
 a.wp-caption:focus,
+.wp-caption.btn-default:focus,
+.search-form .wp-caption.search-submit:focus,
+section.contact form input.wp-caption:focus,
+section.contact form textarea.wp-caption:focus,
+.thumbnail.btn-default:focus,
+.search-form .thumbnail.search-submit:focus,
+section.contact form input.thumbnail:focus,
+section.contact form textarea.thumbnail:focus,
 a.thumbnail.active,
-a.active.wp-caption {
+a.active.wp-caption,
+.active.wp-caption.btn-default,
+.search-form .active.wp-caption.search-submit,
+section.contact form textarea.active.wp-caption,
+section.contact form input.active.wp-caption,
+.thumbnail.active.btn-default,
+.search-form .thumbnail.active.search-submit,
+section.contact form textarea.thumbnail.active,
+section.contact form input.thumbnail.active {
   border-color: #27ae60; }
 
 .alert {
@@ -4950,13 +5305,16 @@ a.active.wp-caption {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px; }
 
-a.list-group-item,
+a.list-group-item, .list-group-item.btn-default, .search-form .list-group-item.search-submit, section.contact form textarea.list-group-item, section.contact form input.list-group-item,
 button.list-group-item {
   color: #555; }
-  a.list-group-item .list-group-item-heading,
+  a.list-group-item .list-group-item-heading, .list-group-item.btn-default .list-group-item-heading, .search-form .list-group-item.search-submit .list-group-item-heading, section.contact form textarea.list-group-item .list-group-item-heading, section.contact form input.list-group-item .list-group-item-heading,
   button.list-group-item .list-group-item-heading {
     color: #333; }
-  a.list-group-item:hover, a.list-group-item:focus,
+  a.list-group-item:hover, .list-group-item.btn-default:hover, .search-form .list-group-item.search-submit:hover, section.contact form input.list-group-item:hover,
+  section.contact form textarea.list-group-item:hover, a.list-group-item:focus, .list-group-item.btn-default:focus, .search-form .list-group-item.search-submit:focus,
+  section.contact form input.list-group-item:focus,
+  section.contact form textarea.list-group-item:focus,
   button.list-group-item:hover,
   button.list-group-item:focus {
     text-decoration: none;
@@ -4995,18 +5353,24 @@ button.list-group-item {
   color: #3c763d;
   background-color: #dff0d8; }
 
-a.list-group-item-success,
+a.list-group-item-success, .list-group-item-success.btn-default, .search-form .list-group-item-success.search-submit, section.contact form textarea.list-group-item-success, section.contact form input.list-group-item-success,
 button.list-group-item-success {
   color: #3c763d; }
-  a.list-group-item-success .list-group-item-heading,
+  a.list-group-item-success .list-group-item-heading, .list-group-item-success.btn-default .list-group-item-heading, .search-form .list-group-item-success.search-submit .list-group-item-heading, section.contact form textarea.list-group-item-success .list-group-item-heading, section.contact form input.list-group-item-success .list-group-item-heading,
   button.list-group-item-success .list-group-item-heading {
     color: inherit; }
-  a.list-group-item-success:hover, a.list-group-item-success:focus,
+  a.list-group-item-success:hover, .list-group-item-success.btn-default:hover, .search-form .list-group-item-success.search-submit:hover, section.contact form input.list-group-item-success:hover,
+  section.contact form textarea.list-group-item-success:hover, a.list-group-item-success:focus, .list-group-item-success.btn-default:focus, .search-form .list-group-item-success.search-submit:focus,
+  section.contact form input.list-group-item-success:focus,
+  section.contact form textarea.list-group-item-success:focus,
   button.list-group-item-success:hover,
   button.list-group-item-success:focus {
     color: #3c763d;
     background-color: #d0e9c6; }
-  a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus,
+  a.list-group-item-success.active, .list-group-item-success.active.btn-default, .search-form .list-group-item-success.active.search-submit, section.contact form textarea.list-group-item-success.active, section.contact form input.list-group-item-success.active, a.list-group-item-success.active:hover, .list-group-item-success.active.btn-default:hover, .search-form .list-group-item-success.active.search-submit:hover, section.contact form input.list-group-item-success.active:hover,
+  section.contact form textarea.list-group-item-success.active:hover, a.list-group-item-success.active:focus, .list-group-item-success.active.btn-default:focus, .search-form .list-group-item-success.active.search-submit:focus,
+  section.contact form input.list-group-item-success.active:focus,
+  section.contact form textarea.list-group-item-success.active:focus,
   button.list-group-item-success.active,
   button.list-group-item-success.active:hover,
   button.list-group-item-success.active:focus {
@@ -5018,18 +5382,24 @@ button.list-group-item-success {
   color: #31708f;
   background-color: #d9edf7; }
 
-a.list-group-item-info,
+a.list-group-item-info, .list-group-item-info.btn-default, .search-form .list-group-item-info.search-submit, section.contact form textarea.list-group-item-info, section.contact form input.list-group-item-info,
 button.list-group-item-info {
   color: #31708f; }
-  a.list-group-item-info .list-group-item-heading,
+  a.list-group-item-info .list-group-item-heading, .list-group-item-info.btn-default .list-group-item-heading, .search-form .list-group-item-info.search-submit .list-group-item-heading, section.contact form textarea.list-group-item-info .list-group-item-heading, section.contact form input.list-group-item-info .list-group-item-heading,
   button.list-group-item-info .list-group-item-heading {
     color: inherit; }
-  a.list-group-item-info:hover, a.list-group-item-info:focus,
+  a.list-group-item-info:hover, .list-group-item-info.btn-default:hover, .search-form .list-group-item-info.search-submit:hover, section.contact form input.list-group-item-info:hover,
+  section.contact form textarea.list-group-item-info:hover, a.list-group-item-info:focus, .list-group-item-info.btn-default:focus, .search-form .list-group-item-info.search-submit:focus,
+  section.contact form input.list-group-item-info:focus,
+  section.contact form textarea.list-group-item-info:focus,
   button.list-group-item-info:hover,
   button.list-group-item-info:focus {
     color: #31708f;
     background-color: #c4e3f3; }
-  a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus,
+  a.list-group-item-info.active, .list-group-item-info.active.btn-default, .search-form .list-group-item-info.active.search-submit, section.contact form textarea.list-group-item-info.active, section.contact form input.list-group-item-info.active, a.list-group-item-info.active:hover, .list-group-item-info.active.btn-default:hover, .search-form .list-group-item-info.active.search-submit:hover, section.contact form input.list-group-item-info.active:hover,
+  section.contact form textarea.list-group-item-info.active:hover, a.list-group-item-info.active:focus, .list-group-item-info.active.btn-default:focus, .search-form .list-group-item-info.active.search-submit:focus,
+  section.contact form input.list-group-item-info.active:focus,
+  section.contact form textarea.list-group-item-info.active:focus,
   button.list-group-item-info.active,
   button.list-group-item-info.active:hover,
   button.list-group-item-info.active:focus {
@@ -5041,18 +5411,24 @@ button.list-group-item-info {
   color: #8a6d3b;
   background-color: #fcf8e3; }
 
-a.list-group-item-warning,
+a.list-group-item-warning, .list-group-item-warning.btn-default, .search-form .list-group-item-warning.search-submit, section.contact form textarea.list-group-item-warning, section.contact form input.list-group-item-warning,
 button.list-group-item-warning {
   color: #8a6d3b; }
-  a.list-group-item-warning .list-group-item-heading,
+  a.list-group-item-warning .list-group-item-heading, .list-group-item-warning.btn-default .list-group-item-heading, .search-form .list-group-item-warning.search-submit .list-group-item-heading, section.contact form textarea.list-group-item-warning .list-group-item-heading, section.contact form input.list-group-item-warning .list-group-item-heading,
   button.list-group-item-warning .list-group-item-heading {
     color: inherit; }
-  a.list-group-item-warning:hover, a.list-group-item-warning:focus,
+  a.list-group-item-warning:hover, .list-group-item-warning.btn-default:hover, .search-form .list-group-item-warning.search-submit:hover, section.contact form input.list-group-item-warning:hover,
+  section.contact form textarea.list-group-item-warning:hover, a.list-group-item-warning:focus, .list-group-item-warning.btn-default:focus, .search-form .list-group-item-warning.search-submit:focus,
+  section.contact form input.list-group-item-warning:focus,
+  section.contact form textarea.list-group-item-warning:focus,
   button.list-group-item-warning:hover,
   button.list-group-item-warning:focus {
     color: #8a6d3b;
     background-color: #faf2cc; }
-  a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus,
+  a.list-group-item-warning.active, .list-group-item-warning.active.btn-default, .search-form .list-group-item-warning.active.search-submit, section.contact form textarea.list-group-item-warning.active, section.contact form input.list-group-item-warning.active, a.list-group-item-warning.active:hover, .list-group-item-warning.active.btn-default:hover, .search-form .list-group-item-warning.active.search-submit:hover, section.contact form input.list-group-item-warning.active:hover,
+  section.contact form textarea.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus, .list-group-item-warning.active.btn-default:focus, .search-form .list-group-item-warning.active.search-submit:focus,
+  section.contact form input.list-group-item-warning.active:focus,
+  section.contact form textarea.list-group-item-warning.active:focus,
   button.list-group-item-warning.active,
   button.list-group-item-warning.active:hover,
   button.list-group-item-warning.active:focus {
@@ -5064,18 +5440,24 @@ button.list-group-item-warning {
   color: #a94442;
   background-color: #f2dede; }
 
-a.list-group-item-danger,
+a.list-group-item-danger, .list-group-item-danger.btn-default, .search-form .list-group-item-danger.search-submit, section.contact form textarea.list-group-item-danger, section.contact form input.list-group-item-danger,
 button.list-group-item-danger {
   color: #a94442; }
-  a.list-group-item-danger .list-group-item-heading,
+  a.list-group-item-danger .list-group-item-heading, .list-group-item-danger.btn-default .list-group-item-heading, .search-form .list-group-item-danger.search-submit .list-group-item-heading, section.contact form textarea.list-group-item-danger .list-group-item-heading, section.contact form input.list-group-item-danger .list-group-item-heading,
   button.list-group-item-danger .list-group-item-heading {
     color: inherit; }
-  a.list-group-item-danger:hover, a.list-group-item-danger:focus,
+  a.list-group-item-danger:hover, .list-group-item-danger.btn-default:hover, .search-form .list-group-item-danger.search-submit:hover, section.contact form input.list-group-item-danger:hover,
+  section.contact form textarea.list-group-item-danger:hover, a.list-group-item-danger:focus, .list-group-item-danger.btn-default:focus, .search-form .list-group-item-danger.search-submit:focus,
+  section.contact form input.list-group-item-danger:focus,
+  section.contact form textarea.list-group-item-danger:focus,
   button.list-group-item-danger:hover,
   button.list-group-item-danger:focus {
     color: #a94442;
     background-color: #ebcccc; }
-  a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus,
+  a.list-group-item-danger.active, .list-group-item-danger.active.btn-default, .search-form .list-group-item-danger.active.search-submit, section.contact form textarea.list-group-item-danger.active, section.contact form input.list-group-item-danger.active, a.list-group-item-danger.active:hover, .list-group-item-danger.active.btn-default:hover, .search-form .list-group-item-danger.active.search-submit:hover, section.contact form input.list-group-item-danger.active:hover,
+  section.contact form textarea.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus, .list-group-item-danger.active.btn-default:focus, .search-form .list-group-item-danger.active.search-submit:focus,
+  section.contact form input.list-group-item-danger.active:focus,
+  section.contact form textarea.list-group-item-danger.active:focus,
   button.list-group-item-danger.active,
   button.list-group-item-danger.active:hover,
   button.list-group-item-danger.active:focus {
@@ -5120,11 +5502,19 @@ button.list-group-item-danger {
   margin-bottom: 0;
   font-size: 16px;
   color: inherit; }
-  .panel-title > a,
+  .panel-title > a, .panel-title > .btn-default, .search-form .panel-title > .search-submit, section.contact form .panel-title > textarea, section.contact form .panel-title > input,
   .panel-title > small,
   .panel-title > .small,
   .panel-title > small > a,
-  .panel-title > .small > a {
+  .panel-title > small > .btn-default,
+  .search-form .panel-title > small > .search-submit,
+  section.contact form .panel-title > small > textarea,
+  section.contact form .panel-title > small > input,
+  .panel-title > .small > a,
+  .panel-title > .small > .btn-default,
+  .search-form .panel-title > .small > .search-submit,
+  section.contact form .panel-title > .small > textarea,
+  section.contact form .panel-title > .small > input {
     color: inherit; }
 
 .panel-footer {
@@ -5812,7 +6202,11 @@ button.close {
     -o-transition: 0.6s ease-in-out left;
     transition: 0.6s ease-in-out left; }
     .carousel-inner > .item > img,
-    .carousel-inner > .item > a > img {
+    .carousel-inner > .item > a > img,
+    .carousel-inner > .item > .btn-default > img,
+    .search-form .carousel-inner > .item > .search-submit > img,
+    section.contact form .carousel-inner > .item > textarea > img,
+    section.contact form .carousel-inner > .item > input > img {
       display: block;
       max-width: 100%;
       height: auto;
@@ -6901,6 +7295,17 @@ button.close {
 body#tinymce {
   margin: 12px !important; }
 
+a, .btn-default, .search-form .search-submit, section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus, section.contact form textarea, section.contact form input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #333; }
+
 .work img {
   max-width: 100%; }
 
@@ -6929,19 +7334,73 @@ body#tinymce {
   left: 0;
   width: 100%; }
 
-.headings, .navbar-default.nav-transparent, h3 {
+.headings, .navbar-default, h3 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 2px solid #333; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .btn-default, .navbar-default .search-form .navbar-nav > .active > .search-submit, .search-form .navbar-default .navbar-nav > .active > .search-submit, .navbar-default section.contact form .navbar-nav > .active > textarea, section.contact form .navbar-default .navbar-nav > .active > textarea, .navbar-default section.contact form .navbar-nav > .active > input, section.contact form .navbar-default .navbar-nav > .active > input, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > .btn-default:focus, .navbar-default .search-form .navbar-nav > .active > .search-submit:focus, .search-form .navbar-default .navbar-nav > .active > .search-submit:focus,
+.navbar-default section.contact form .navbar-nav > .active > input:focus,
+section.contact form .navbar-default .navbar-nav > .active > input:focus,
+.navbar-default section.contact form .navbar-nav > .active > textarea:focus,
+section.contact form .navbar-default .navbar-nav > .active > textarea:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > .btn-default:hover, .navbar-default .search-form .navbar-nav > .active > .search-submit:hover, .search-form .navbar-default .navbar-nav > .active > .search-submit:hover, .navbar-default section.contact form .navbar-nav > .active > input:hover, section.contact form .navbar-default .navbar-nav > .active > input:hover,
+.navbar-default section.contact form .navbar-nav > .active > textarea:hover,
+section.contact form .navbar-default .navbar-nav > .active > textarea:hover {
+  color: #333;
+  text-decoration: underline;
+  background-color: transparent; }
+
+.navbar-default.nav-transparent .navbar-nav > .active > a, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input, .navbar-default.nav-transparent .navbar-nav > .active > a:focus, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default:focus, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit:focus, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit:focus,
+.navbar-default.nav-transparent section.contact form .navbar-nav > .active > input:focus,
+section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input:focus,
+.navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea:focus,
+section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea:focus, .navbar-default.nav-transparent .navbar-nav > .active > a:hover, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default:hover, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit:hover, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit:hover, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input:hover, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input:hover,
+.navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea:hover,
+section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea:hover {
+  color: #fff; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > .btn-default, .navbar-default .search-form .navbar-nav > li > .search-submit, .search-form .navbar-default .navbar-nav > li > .search-submit, .navbar-default section.contact form .navbar-nav > li > textarea, section.contact form .navbar-default .navbar-nav > li > textarea, .navbar-default section.contact form .navbar-nav > li > input, section.contact form .navbar-default .navbar-nav > li > input, .navbar-default .navbar-text {
   color: #333; }
+
+.navbar-default.nav-transparent .navbar-nav > li > a, .navbar-default.nav-transparent .navbar-nav > li > .btn-default, .navbar-default.nav-transparent .search-form .navbar-nav > li > .search-submit, .search-form .navbar-default.nav-transparent .navbar-nav > li > .search-submit, .navbar-default.nav-transparent section.contact form .navbar-nav > li > textarea, section.contact form .navbar-default.nav-transparent .navbar-nav > li > textarea, .navbar-default.nav-transparent section.contact form .navbar-nav > li > input, section.contact form .navbar-default.nav-transparent .navbar-nav > li > input, .navbar-default.nav-transparent .navbar-text {
+  color: #fff; }
 
 .main-headings, h1, h2 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase; }
 
-section {
+.divider {
+  width: 50px;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #D6E1E4;
+  display: block; }
+
+.btn-default, .search-form .search-submit, section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus, section.contact form textarea, section.contact form input {
+  border: 2px solid #333;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+section,
+.entry-content {
   padding: 60px 0 80px 0; }
+
+section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus {
+  background-color: transparent; }
 
 .c100 {
   float: none;
@@ -6963,7 +7422,7 @@ body {
   font-size: 12px;
   line-height: 2em; }
 
-.header-container {
+.header-container, .work h1 {
   color: #fff;
   position: relative;
   top: 50%;
@@ -6975,16 +7434,12 @@ body {
 
 section.contact form textarea, section.contact form input {
   width: 100%;
-  border: 2px solid #333;
-  color: #333;
   padding: 9px 10px;
-  background: none;
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif; }
+  background: none; }
 
-[type=submit]:hover {
-  background: #D6E1E4; }
+section.contact form [type=submit]:hover, [type=button]:hover {
+  background: #D6E1E4;
+  border-color: #333; }
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -7002,9 +7457,14 @@ section.contact form textarea, section.contact form input {
   /* Firefox 18- */
   color: #333; }
 
-footer {
+div.wpcf7-validation-errors {
+  border: 2px solid red; }
+
+footer.content-info {
   background: #A4A7A9;
-  color: #fff; }
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .work .single-tile {
   position: relative;
@@ -7022,14 +7482,47 @@ footer {
     border: 2px solid #333;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase; }
-.work .single-tile a {
+.work .single-tile a, .work .single-tile .btn-default, .work .single-tile .search-form .search-submit, .search-form .work .single-tile .search-submit, .work .single-tile section.contact form textarea, section.contact form .work .single-tile textarea, .work .single-tile section.contact form input, section.contact form .work .single-tile input {
   color: #333; }
 .work .single-tile:hover .caption, .work .single-tile:focus .caption {
   opacity: 1; }
 .work .single-tile:hover img, .work .single-tile:focus img {
   opacity: .35; }
 
+.social-icons {
+  padding: 0;
+  margin: 0; }
+  .social-icons li {
+    display: inline-block;
+    padding: 10px; }
+
+.glyphicon-menu-down {
+  font-size: 24px;
+  color: white; }
+
+.work header {
+  height: 350px; }
+
+.work h1 {
+  color: #333; }
+
+.metaslider {
+  margin: 0 auto;
+  margin-top: 60px; }
+
+a[rel~="next"], [rel~="next"].btn-default, .search-form [rel~="next"].search-submit, section.contact form textarea[rel~="next"], section.contact form input[rel~="next"] {
+  margin-right: 15px; }
+
+a[rel~="prev"], [rel~="prev"].btn-default, .search-form [rel~="prev"].search-submit, section.contact form textarea[rel~="prev"], section.contact form input[rel~="prev"] {
+  margin-left: 15px; }
+
+article footer {
+  padding: 30px 0; }
+
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .nav.navbar-nav {
+    float: right; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   section.contact form input:not([type="submit"]) {
