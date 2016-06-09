@@ -9,9 +9,9 @@
         <?php the_content(); ?>
       </div>
     </div>
-<!--    <footer>-->
-<!--      --><?php //wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
-<!--    </footer>-->
-    <?php comments_template('/templates/comments.php'); ?>
+    <footer class="text-center">
+      <?php next_post_link('&laquo; %link'); ?> <?php previous_post_link('%link &raquo;'); ?>
+    </footer>
+<!--    --><?php //comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>
