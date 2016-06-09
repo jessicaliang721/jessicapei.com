@@ -10,7 +10,7 @@
       </div>
     </div>
     <footer class="text-center">
-      <?php next_post_link('&laquo; %link'); ?> <?php previous_post_link('%link &raquo;'); ?>
+      <?php next_post_link('&laquo; %link'); ?> <?php previous_post_link('%link &raquo;');?>
     </footer>
 <!--    --><?php //comments_template('/templates/comments.php'); ?>
   </article>
