@@ -7391,7 +7391,8 @@ section.contact form textarea:focus, section.contact form textarea, section.cont
   border-radius: 0; }
 
 section,
-.entry-content {
+.entry-content,
+.page.container {
   padding: 60px 0 80px 0; }
 
 section.contact form input:hover,
@@ -7422,7 +7423,7 @@ body {
   font-size: 12px;
   line-height: 2em; }
 
-.header-container, .work h1 {
+.header-container, article header h1, .page-header h1 {
   color: #fff;
   position: relative;
   top: 50%;
@@ -7437,7 +7438,7 @@ section.contact form textarea, section.contact form input {
   padding: 9px 10px;
   background: none; }
 
-section.contact form [type=submit]:hover, [type=button]:hover {
+section.contact form [type=submit]:hover, .btn:hover, .comment-form input[type="submit"]:hover, .search-form .search-submit:hover {
   background: #D6E1E4;
   border-color: #333; }
 
@@ -7500,24 +7501,27 @@ footer.content-info {
   font-size: 24px;
   color: white; }
 
-.work header {
-  height: 350px; }
+.work header.single-post, .page-header {
+  height: 350px;
+  text-align: center; }
 
-.work h1 {
+article header h1, .page-header h1 {
   color: #333; }
 
 .metaslider {
   margin: 0 auto;
   margin-top: 60px; }
 
-a[rel~="next"], [rel~="next"].btn-default, .search-form [rel~="next"].search-submit, section.contact form textarea[rel~="next"], section.contact form input[rel~="next"] {
-  margin-right: 15px; }
-
-a[rel~="prev"], [rel~="prev"].btn-default, .search-form [rel~="prev"].search-submit, section.contact form textarea[rel~="prev"], section.contact form input[rel~="prev"] {
-  margin-left: 15px; }
-
 article footer {
   padding: 30px 0; }
+
+.prev-post, .next-post {
+  white-space: pre-line;
+  display: inline-block;
+  width: 50%; }
+
+.prev-post {
+  float: right; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
