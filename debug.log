@@ -2931,3 +2931,15 @@ Stack trace:
 [09-Jun-2016 19:40:52 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-single.php on line 23
 [09-Jun-2016 19:45:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/page-header.php on line 14
 [09-Jun-2016 19:45:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/page-header.php on line 14
+[15-Jun-2016 14:04:38 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 34
+[15-Jun-2016 14:15:21 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 11
+[15-Jun-2016 14:29:13 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
+[15-Jun-2016 14:29:46 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[15-Jun-2016 14:29:46 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[15-Jun-2016 14:29:46 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[15-Jun-2016 14:29:46 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[15-Jun-2016 14:29:46 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[15-Jun-2016 14:29:47 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
+[15-Jun-2016 14:29:47 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
+[15-Jun-2016 14:29:47 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
+[15-Jun-2016 14:30:42 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
