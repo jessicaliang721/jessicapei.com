@@ -10,6 +10,7 @@
         $loop = new WP_Query( $args );
         if ($loop->have_posts()) {
             $i = 0;
+            $count = 0;
             while ($loop->have_posts()) : $loop->the_post();
                 if ($i % 2 == 0 && $i % 3 === 0) { ?>
                     <div class="row text-center">
@@ -26,16 +27,15 @@
                 if ($i != 0 && $i % 2 == 0 && $i % 3 === 0) { ?>
                     </div>
                     <div class="clearfix"></div>
-                <?php } ?>
-            <?php endwhile;
+                <?php }
+            $count++;
+            endwhile;
+            if (is_front_page() && $count < 6) { ?>
+                    <div class="row text-center">
+                        <button class="btn btn-default" type="button">View More</button>
+                    </div>
+            <?php }
         }
         wp_reset_query(); ?>
     </div>
-    <?php if (is_front_page()) { ?>
-        <div class="container">
-            <div class="row text-center">
-                <button class="btn btn-default" type="button">View More</button>
-            </div>
-        </div>
-    <?php } ?>
 </section>

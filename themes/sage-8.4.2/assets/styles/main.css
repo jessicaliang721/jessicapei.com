@@ -7306,6 +7306,26 @@ section.contact form textarea:focus, section.contact form textarea, section.cont
   letter-spacing: 2px;
   color: #333; }
 
+.btn-default:focus, .search-form .search-submit:focus,
+section.contact form input:focus:active,
+section.contact form input:focus,
+section.contact form textarea:focus:active,
+section.contact form textarea:focus, .btn-default:hover, .search-form .search-submit:hover, section.contact form input:hover,
+section.contact form textarea:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, a:focus, .btn-default:focus, .search-form .search-submit:focus,
+section.contact form input:focus:active,
+section.contact form input:focus,
+section.contact form textarea:focus:active,
+section.contact form textarea:focus, a:hover, .btn-default:hover, .search-form .search-submit:hover, section.contact form input:hover,
+section.contact form textarea:hover, section.contact form input:focus, section.contact form input:focus:active, section.contact form input:hover, section.contact form textarea:focus, section.contact form textarea:focus:active, section.contact form textarea:hover {
+  color: #333;
+  text-decoration: underline; }
+
+.prof-pic {
+  margin: 20px auto;
+  max-width: 200px;
+  max-height: 200px;
+  display: block; }
+
 .work img {
   max-width: 100%; }
 

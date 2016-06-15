@@ -3,8 +3,8 @@
     <div class="container">
         <h3 class="text-center"><?php the_field("about_h3"); ?></h3>
         <span class="divider"></span>
-        <img src="<?php the_field("about_picture"); ?>">
-        <?php the_field("about_summary"); ?>
+        <img src="<?php the_field("about_picture"); ?>" class="prof-pic">
+        <p><?php the_field("about_summary"); ?></p>
     </div>
 </section>
 
