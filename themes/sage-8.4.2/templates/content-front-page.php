@@ -9,7 +9,13 @@
 </section>
 
 <!--Skills-->
-<section class="container-fluid section-background" style="background-image: url(<?php the_field('skills_background'); ?>)">
+<section class="container-fluid section-background" style="
+<?php if (get_field('skills_background')) { ?>
+    background-image: url(<?php the_field('skills_background')?>);
+<?php } else { ?>
+    background: <?php the_field('skill_background_color');?>
+<?php } ?>
+">
     <div class="container">
         <h3 class="text-center"><?php the_field("skills_h3"); ?></h3>
         <span class="divider"></span>

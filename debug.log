@@ -2943,3 +2943,6 @@ Stack trace:
 [15-Jun-2016 14:29:47 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
 [15-Jun-2016 14:29:47 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
 [15-Jun-2016 14:30:42 UTC] PHP Parse error:  syntax error, unexpected '?>' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/social.php on line 6
+[21-Jun-2016 16:35:12 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 12
+[21-Jun-2016 16:40:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 48
+[21-Jun-2016 16:40:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 48
