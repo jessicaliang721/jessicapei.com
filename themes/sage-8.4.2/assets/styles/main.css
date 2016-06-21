@@ -7311,13 +7311,15 @@ section.contact form input:focus:active,
 section.contact form input:focus,
 section.contact form textarea:focus:active,
 section.contact form textarea:focus, .btn-default:hover, .search-form .search-submit:hover, section.contact form input:hover,
-section.contact form textarea:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, a:focus, .btn-default:focus, .search-form .search-submit:focus,
+section.contact form textarea:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, section.contact form input:focus, section.contact form input:focus:active, section.contact form input:hover, section.contact form textarea:focus, section.contact form textarea:focus:active, section.contact form textarea:hover {
+  color: #333; }
+
+a:focus, .btn-default:focus, .search-form .search-submit:focus,
 section.contact form input:focus:active,
 section.contact form input:focus,
 section.contact form textarea:focus:active,
 section.contact form textarea:focus, a:hover, .btn-default:hover, .search-form .search-submit:hover, section.contact form input:hover,
-section.contact form textarea:hover, section.contact form input:focus, section.contact form input:focus:active, section.contact form input:hover, section.contact form textarea:focus, section.contact form textarea:focus:active, section.contact form textarea:hover {
-  color: #333;
+section.contact form textarea:hover {
   text-decoration: underline; }
 
 .prof-pic {
