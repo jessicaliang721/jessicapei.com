@@ -5,8 +5,12 @@ a {
   color: $input-color;
 }
 
-.btn-default:focus, .btn-default:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, a:focus, a:hover, section.contact form input:focus, section.contact form input:focus:active, section.contact form input:hover, section.contact form textarea:focus, section.contact form textarea:focus:active, section.contact form textarea:hover {
+.btn-default:focus, .btn-default:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, section.contact form input:focus, section.contact form input:focus:active, section.contact form input:hover, section.contact form textarea:focus, section.contact form textarea:focus:active, section.contact form textarea:hover {
   color: $input-color;
+  //text-decoration: underline;
+}
+
+a:focus, a:hover {
   text-decoration: underline;
 }
 
