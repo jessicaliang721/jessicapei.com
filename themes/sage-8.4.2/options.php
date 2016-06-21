@@ -179,6 +179,12 @@ function optionsframework_options() {
 		'id' => 'linkedin_icon',
 		'type' => 'upload');
 
+	$options[] = array(
+		'name' => __('Email Icon', 'options_check'),
+		'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
+		'id' => 'email_icon',
+		'type' => 'upload');
+
 //	$options[] = array(
 //		'name' => __('Textarea', 'options_check'),
 //		'desc' => __('Textarea description.', 'options_check'),
