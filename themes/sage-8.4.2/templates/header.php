@@ -1,4 +1,4 @@
-<header class="banner navbar navbar-default navbar-fixed-top nav-transparent sticky" role="banner">
+<header class="banner navbar navbar-default navbar-fixed-top <?php if (is_front_page()) {?>nav-transparent<?php }?> sticky" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
