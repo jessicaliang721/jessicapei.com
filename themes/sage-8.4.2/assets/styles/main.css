@@ -7301,9 +7301,7 @@ section.contact form input:focus,
 section.contact form textarea:hover,
 section.contact form textarea:active:focus,
 section.contact form textarea:focus, section.contact form textarea, section.contact form input {
-  font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  letter-spacing: 2px;
   color: #333; }
 
 a:focus, .btn-default:focus, .search-form .search-submit:focus,
@@ -7383,7 +7381,13 @@ section.contact form .navbar-default .navbar-nav > .active > textarea:hover {
 .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input:focus,
 section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input:focus,
 .navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea:focus,
-section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea:focus, .navbar-default.nav-transparent .navbar-nav > .active > a:hover, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default:hover, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit:hover, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit:hover, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input:hover, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input:hover,
+section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea:focus,
+.navbar-default.nav-transparent .navbar-nav > .active > a:hover,
+.navbar-default.nav-transparent .navbar-nav > .active > .btn-default:hover,
+.navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit:hover,
+.search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit:hover,
+.navbar-default.nav-transparent section.contact form .navbar-nav > .active > input:hover,
+section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input:hover,
 .navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea:hover,
 section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea:hover {
   color: #fff; }
@@ -7543,6 +7547,16 @@ footer.content-info {
 .skill-icon {
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.alt-font, a, .btn-default, .search-form .search-submit, section.contact form input:hover,
+section.contact form input:active:focus,
+section.contact form input:focus,
+section.contact form textarea:hover,
+section.contact form textarea:active:focus,
+section.contact form textarea:focus, section.contact form textarea, section.contact form input {
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 /*****************
   WORK CPT
