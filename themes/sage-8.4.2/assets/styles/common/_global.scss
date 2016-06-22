@@ -120,6 +120,7 @@ section.contact {
     textarea:focus {
       @extend .btn-default;
       background-color: transparent;
+      text-decoration: none;
     }
   }
 }

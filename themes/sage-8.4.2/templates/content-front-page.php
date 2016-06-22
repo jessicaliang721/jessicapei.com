@@ -24,7 +24,7 @@
             <?php
             $fields = CFS()->get( 'skills' );
             foreach ( $fields as $field ) {?>
-                <div class="col-xs-6 col-sm-6 col-md-3 skill-icon">
+                <div class="col-xs-6 col-sm-4 col-md-3 skill-icon">
                     <?php echo $field['skill_percent']; ?>
                     <div>
                         <?php echo $field['skill_description']; ?>

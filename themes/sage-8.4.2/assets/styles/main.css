@@ -7423,7 +7423,8 @@ section.contact form input:focus,
 section.contact form textarea:hover,
 section.contact form textarea:active:focus,
 section.contact form textarea:focus {
-  background-color: transparent; }
+  background-color: transparent;
+  text-decoration: none; }
 
 .c100 {
   float: none;
@@ -7537,7 +7538,7 @@ footer.content-info {
 
 .skill-icon {
   padding-top: 15px;
-  padding-bottom: 2px; }
+  padding-bottom: 15px; }
 
 /*****************
   WORK CPT
