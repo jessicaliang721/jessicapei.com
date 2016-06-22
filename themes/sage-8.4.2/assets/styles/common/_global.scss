@@ -1,7 +1,6 @@
 a {
-  font-family: $headings-font-family;
+  @extend .alt-font;
   font-size: 12px;
-  letter-spacing: 2px;
   color: $input-color;
 }
 
@@ -267,6 +266,12 @@ footer.content-info {
 .skill-icon {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.alt-font {
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /*****************
