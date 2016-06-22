@@ -7536,7 +7536,8 @@ footer.content-info {
   border: 0.08em solid #333; }
 
 .skill-icon {
-  padding-top: 20px; }
+  padding-top: 15px;
+  padding-bottom: 2px; }
 
 /*****************
   WORK CPT
