@@ -2946,3 +2946,6 @@ Stack trace:
 [21-Jun-2016 16:35:12 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 12
 [21-Jun-2016 16:40:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 48
 [21-Jun-2016 16:40:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-front-page.php on line 48
+[22-Jun-2016 18:26:12 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
+[22-Jun-2016 18:27:23 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
+[22-Jun-2016 18:27:49 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
