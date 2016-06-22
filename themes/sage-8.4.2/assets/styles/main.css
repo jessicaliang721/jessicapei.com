@@ -7375,7 +7375,11 @@ section.contact form .navbar-default .navbar-nav > .active > textarea:hover {
   text-decoration: underline;
   background-color: transparent; }
 
-.navbar-default.nav-transparent .navbar-nav > .active > a, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input, .navbar-default.nav-transparent .navbar-nav > .active > a:focus, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default:focus, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit:focus, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit:focus,
+.navbar-default.nav-transparent .navbar-nav > .active > a, .navbar-default.nav-transparent .navbar-nav > .active > .btn-default, .navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit, .search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > textarea, .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input, section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input,
+.navbar-default.nav-transparent .navbar-nav > .active > a:focus,
+.navbar-default.nav-transparent .navbar-nav > .active > .btn-default:focus,
+.navbar-default.nav-transparent .search-form .navbar-nav > .active > .search-submit:focus,
+.search-form .navbar-default.nav-transparent .navbar-nav > .active > .search-submit:focus,
 .navbar-default.nav-transparent section.contact form .navbar-nav > .active > input:focus,
 section.contact form .navbar-default.nav-transparent .navbar-nav > .active > input:focus,
 .navbar-default.nav-transparent section.contact form .navbar-nav > .active > textarea:focus,

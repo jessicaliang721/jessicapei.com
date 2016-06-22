@@ -80,13 +80,16 @@
         scroll = $(window).scrollTop(),
         navbar = $('.navbar-default');
 
-    if (scroll >= 1) {
+    if (scroll >= 1 && $("body").hasClass("home")) {
       sticky.addClass('fixed');
       navbar.removeClass('nav-transparent');
     }
-    else {
+    else if (scroll < 1 && $("body").hasClass("home")) {
       sticky.removeClass('fixed');
       navbar.addClass('nav-transparent');
+    }
+    else {
+      sticky.removeClass('fixed');
     }
   });
 

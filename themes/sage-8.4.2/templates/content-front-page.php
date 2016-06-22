@@ -26,7 +26,7 @@
             foreach ( $fields as $field ) {?>
                 <div class="col-xs-6 col-sm-4 col-md-3 skill-icon">
                     <?php echo $field['skill_percent']; ?>
-                    <div>
+                    <div class="alt-font">
                         <?php echo $field['skill_description']; ?>
                     </div>
                 </div>
