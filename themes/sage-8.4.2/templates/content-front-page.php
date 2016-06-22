@@ -13,7 +13,7 @@
 <?php if (get_field('skills_background')) { ?>
     background-image: url(<?php the_field('skills_background')?>);
 <?php } else { ?>
-    background: <?php the_field('skill_background_color');?>
+    background: <?php the_field('skills_background_color');?>
 <?php } ?>
 ">
     <div class="container">
