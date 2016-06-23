@@ -97,7 +97,7 @@ a:focus, a:hover {
   //margin-bottom: 30px;
 }
 .btn-default {
-  @extend a;
+  @extend .alt-font;
   border: 2px solid $input-color;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -206,6 +206,7 @@ footer.content-info {
     margin-bottom: 20px;
 
     .caption {
+      @extend .alt-font;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -213,8 +214,6 @@ footer.content-info {
       @include translate(-50%, -50%);
       padding: 9px;
       border: 2px solid $input-color;
-      font-family: $headings-font-family;
-      text-transform: uppercase;
     }
   }
 
