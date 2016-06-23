@@ -32,7 +32,7 @@ unset($file, $filepath);
 function work_custom_post_type() {
 
   $labels = array(
-      'name'                  => _x( 'Works', 'Post Type General Name', 'text_domain' ),
+      'name'                  => _x( 'Work', 'Post Type General Name', 'text_domain' ),
       'singular_name'         => _x( 'Work', 'Post Type Singular Name', 'text_domain' ),
       'menu_name'             => __( 'Work', 'text_domain' ),
       'name_admin_bar'        => __( 'Work', 'text_domain' ),
