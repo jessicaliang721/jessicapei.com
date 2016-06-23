@@ -6983,7 +6983,13 @@ section.contact form textarea:hover, .search-form .search-submit:focus, .search-
   color: #fff; }
 
 .navbar-default .navbar-brand {
-  color: red; }
+  color: #333; }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #333;
+  text-decoration: underline; }
 
 .fixed {
   position: fixed;
