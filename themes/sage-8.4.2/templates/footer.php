@@ -4,7 +4,7 @@
   </div>
   <div class="container-fluid">
     <div class="container">
-      <p>Copyright &copy Jessica Pei <?php echo date('Y'); ?></p>
+      <p>Copyright &copy <?php echo date('Y'); ?> Jessica Pei. All background photos taken by me.</p>
       <?php get_template_part('templates/social'); ?>
     </div>
   </div>
