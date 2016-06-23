@@ -6979,6 +6979,12 @@ section.contact form textarea:hover, .search-form .search-submit:focus, .search-
   background-color: transparent;
   border-color: transparent; }
 
+.navbar-default.nav-transparent .navbar-brand {
+  color: #fff; }
+
+.navbar-default .navbar-brand {
+  color: red; }
+
 .fixed {
   position: fixed;
   top: 0;
@@ -7075,6 +7081,9 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+/*****************
+  CONTACT
+*****************/
 section.contact form textarea, section.contact form input {
   width: 100%;
   padding: 9px 10px;
