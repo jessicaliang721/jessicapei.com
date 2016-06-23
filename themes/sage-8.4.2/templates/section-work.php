@@ -26,9 +26,9 @@
         </div>
         <div class="clearfix"></div>
             <?php
-            if (is_front_page() && $count > 6) { ?>
+            if (is_front_page()) { ?>
                     <div class="row text-center">
-                        <a href="<?php echo get_post_type_archive_link( 'work' ); ?>" class="btn btn-default">View More</a>
+                        <a href="<?php echo get_post_type_archive_link( 'work' ); ?>" class="btn btn-default">View All</a>
                     </div>
             <?php }
         }

@@ -53,6 +53,13 @@ a:focus, a:hover {
   color: $input-color;
 }
 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: $input-color;
+  text-decoration: underline;
+}
+
 .fixed {
   position: fixed;
   top:0;
