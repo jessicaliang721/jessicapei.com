@@ -1,6 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-    <header class="single-post container-fluid text-center section-background" style="background-image: url(<?php the_field('work_background'); ?>)">
+    <header class="single-post container-fluid text-center section-background" style="<?php if(get_field('work_background')) { ?>background-image: url(<?php the_field('work_background'); ?>)<?php } else { ?>background: #d6e1e4;<?php } ?>">
       <h1 class="entry-title"><?php the_title(); ?></h1>
 <!--      --><?php //get_template_part('templates/entry-meta'); ?>
     </header>

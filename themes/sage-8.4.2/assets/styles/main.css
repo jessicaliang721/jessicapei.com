@@ -7189,6 +7189,9 @@ section.contact form textarea:focus, section.contact form textarea, section.cont
   height: 350px;
   text-align: center; }
 
+.page-header {
+  background: #d6e1e4; }
+
 article header h1, .page-header h1 {
   color: #333; }
 

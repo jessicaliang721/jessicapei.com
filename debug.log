@@ -2949,3 +2949,4 @@ Stack trace:
 [22-Jun-2016 18:26:12 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
 [22-Jun-2016 18:27:23 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
 [22-Jun-2016 18:27:49 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
+[01-Aug-2016 20:22:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-single.php on line 3
