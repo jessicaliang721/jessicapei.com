@@ -300,6 +300,10 @@ footer.content-info {
   text-align: center;
 }
 
+.page-header {
+  background: #d6e1e4;
+}
+
 article header h1, .page-header h1 {
   @extend .header-container;
   color: $input-color
