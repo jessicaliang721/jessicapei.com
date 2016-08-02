@@ -160,22 +160,6 @@ section,
   padding: 60px 0 80px 0;
 }
 
-
-section.contact {
-  form {
-    input:hover,
-    input:active:focus,
-    input:focus,
-    textarea:hover,
-    textarea:active:focus,
-    textarea:focus {
-      @extend .btn-default;
-      background-color: transparent;
-      text-decoration: none;
-    }
-  }
-}
-
 .c100 {
   float: none;
   margin: 0 auto;
@@ -228,6 +212,22 @@ body {
   CONTACT
 *****************/
 
+.contact {
+  form {
+    text-transform: none;
+    input:hover,
+    input:active:focus,
+    input:focus,
+    textarea:hover,
+    textarea:active:focus,
+    textarea:focus {
+      @extend .btn-default;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
+
 .contact form {
   textarea, input {
     @extend .btn-default;
@@ -241,6 +241,8 @@ body {
   background: $light-color;
   border-color: $input-color;
 }
+
+
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $input-color;
@@ -273,6 +275,7 @@ footer.content-info {
 
     .caption {
       @extend .alt-font;
+      text-transform: uppercase;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -335,7 +338,7 @@ footer.content-info {
 
 .alt-font {
   font-family: Montserrat,sans-serif;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   letter-spacing: 2px;
 }
 
