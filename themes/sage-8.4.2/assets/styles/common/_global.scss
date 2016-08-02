@@ -9,8 +9,10 @@ a:focus, a:hover {
   color: inherit;
 }
 
-.btn-default:focus, .btn-default:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, section.contact form input:focus, section.contact form input:focus:active, section.contact form input:hover, section.contact form textarea:focus, section.contact form textarea:focus:active, section.contact form textarea:hover {
+.btn-default:focus, .btn-default:hover, .search-form .search-submit:focus, .search-form .search-submit:hover, .contact form input:focus, .contact form input:focus:active, .contact form input:hover, .contact form textarea:focus, .contact form textarea:focus:active, .contact form textarea:hover {
   color: $input-color;
+  background: none;
+  border-color: inherit;
 }
 
 .prof-pic {
@@ -89,6 +91,10 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: $dark-color;
+}
+
 .fixed {
   position: fixed;
   top:0;
@@ -154,22 +160,6 @@ section,
   padding: 60px 0 80px 0;
 }
 
-
-section.contact {
-  form {
-    input:hover,
-    input:active:focus,
-    input:focus,
-    textarea:hover,
-    textarea:active:focus,
-    textarea:focus {
-      @extend .btn-default;
-      background-color: transparent;
-      text-decoration: none;
-    }
-  }
-}
-
 .c100 {
   float: none;
   margin: 0 auto;
@@ -207,8 +197,36 @@ body {
 }
 
 /*****************
+  BODY
+*****************/
+
+.wrap > .content.row {
+  margin: 0;
+}
+
+.main {
+  padding: 0;
+}
+
+/*****************
   CONTACT
 *****************/
+
+.contact {
+  form {
+    text-transform: none;
+    input:hover,
+    input:active:focus,
+    input:focus,
+    textarea:hover,
+    textarea:active:focus,
+    textarea:focus {
+      @extend .btn-default;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
 
 .contact form {
   textarea, input {
@@ -219,10 +237,12 @@ body {
   }
 }
 
-section.contact form [type=submit]:hover, .btn:hover {
+.contact form [type=submit]:hover, .btn:hover {
   background: $light-color;
   border-color: $input-color;
 }
+
+
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $input-color;
@@ -255,6 +275,7 @@ footer.content-info {
 
     .caption {
       @extend .alt-font;
+      text-transform: uppercase;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -317,7 +338,7 @@ footer.content-info {
 
 .alt-font {
   font-family: Montserrat,sans-serif;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   letter-spacing: 2px;
 }
 
