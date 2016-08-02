@@ -7109,6 +7109,15 @@ body {
   transform: translate(-50%, -50%); }
 
 /*****************
+  BODY
+*****************/
+.wrap > .content.row {
+  margin: 0; }
+
+.main {
+  padding: 0; }
+
+/*****************
   CONTACT
 *****************/
 .contact form textarea, .contact form input {
