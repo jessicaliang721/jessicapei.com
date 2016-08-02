@@ -7164,7 +7164,8 @@ footer.content-info {
 
 .work .single-tile {
   position: relative;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  min-height: 205px; }
   .work .single-tile .caption {
     text-transform: uppercase;
     position: absolute;
