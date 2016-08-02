@@ -41,6 +41,30 @@ a:focus, a:hover {
   height: 100vh;
 }
 
+/*****************
+  HEADER
+*****************/
+
+.nav-transparent.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.nav-transparent.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $input-color;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: $input-color;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #333;
+}
+
 .navbar-default.nav-transparent {
   background-color: $transparent;
   border-color: $transparent;
@@ -52,6 +76,10 @@ a:focus, a:hover {
 
 .navbar-default .navbar-brand {
   color: $input-color;
+}
+
+.nav-transparent.navbar-default .navbar-brand:hover {
+  color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -182,7 +210,7 @@ body {
   CONTACT
 *****************/
 
-section.contact form {
+.contact form {
   textarea, input {
     @extend .btn-default;
     width: $full-width;
@@ -338,7 +366,7 @@ article footer {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md) {
-  section.contact form {
+  .contact form {
     input:not([type="submit"]) {
       width: 32.7%;
       float: left;
@@ -347,7 +375,7 @@ article footer {
     }
   }
 
-  section.contact form {
+  .contact form {
     p:nth-of-type(3) input {
       margin-right: 0;
       width: 33%;
