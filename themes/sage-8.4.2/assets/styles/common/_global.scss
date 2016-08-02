@@ -272,6 +272,7 @@ footer.content-info {
   .single-tile {
     position: relative;
     margin-bottom: 20px;
+    min-height: 205px;
 
     .caption {
       @extend .alt-font;
