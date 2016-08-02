@@ -6978,11 +6978,20 @@ section.contact form textarea:hover, .contact form textarea:hover, .contact form
 /*****************
   HEADER
 *****************/
-.navbar-default .navbar-toggle .icon-bar {
+.nav-transparent.navbar-default .navbar-toggle .icon-bar {
   background-color: white; }
 
-.navbar-default .navbar-toggle {
+.nav-transparent.navbar-default .navbar-toggle {
   border-color: white; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333; }
+
+.navbar-default .navbar-toggle {
+  border-color: #333; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #333; }
 
 .navbar-default.nav-transparent {
   background-color: transparent;
@@ -6993,6 +7002,9 @@ section.contact form textarea:hover, .contact form textarea:hover, .contact form
 
 .navbar-default .navbar-brand {
   color: #333; }
+
+.nav-transparent.navbar-default .navbar-brand:hover {
+  color: #fff; }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav > li > a:focus,

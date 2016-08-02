@@ -45,12 +45,24 @@ a:focus, a:hover {
   HEADER
 *****************/
 
-.navbar-default .navbar-toggle .icon-bar {
+.nav-transparent.navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-.navbar-default .navbar-toggle {
+.nav-transparent.navbar-default .navbar-toggle {
   border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $input-color;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: $input-color;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #333;
 }
 
 .navbar-default.nav-transparent {
@@ -64,6 +76,10 @@ a:focus, a:hover {
 
 .navbar-default .navbar-brand {
   color: $input-color;
+}
+
+.nav-transparent.navbar-default .navbar-brand:hover {
+  color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
