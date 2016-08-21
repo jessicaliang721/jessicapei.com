@@ -115,30 +115,36 @@ function optionsframework_options() {
 //		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Twitter Handle', 'options_check'),
-		'desc' => __('A text input field.', 'options_check'),
-		'id' => 'twitter_handle',
-		'std' => 'Default Value',
-		'type' => 'text');
-
-	$options[] = array(
-		'name' => __('Twitter Icon', 'options_check'),
+		'name' => __('Header Logo', 'options_check'),
 		'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
-		'id' => 'twitter_icon',
+		'id' => 'header_logo',
 		'type' => 'upload');
 
-	$options[] = array(
-		'name' => __('Facebook Handle', 'options_check'),
-		'desc' => __('A text input field.', 'options_check'),
-		'id' => 'facebook_handle',
-		'std' => 'Default Value',
-		'type' => 'text');
-
-	$options[] = array(
-		'name' => __('Facebook Icon', 'options_check'),
-		'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
-		'id' => 'facebook_icon',
-		'type' => 'upload');
+//	$options[] = array(
+//		'name' => __('Twitter Handle', 'options_check'),
+//		'desc' => __('A text input field.', 'options_check'),
+//		'id' => 'twitter_handle',
+//		'std' => 'Default Value',
+//		'type' => 'text');
+//
+//	$options[] = array(
+//		'name' => __('Twitter Icon', 'options_check'),
+//		'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
+//		'id' => 'twitter_icon',
+//		'type' => 'upload');
+//
+//	$options[] = array(
+//		'name' => __('Facebook Handle', 'options_check'),
+//		'desc' => __('A text input field.', 'options_check'),
+//		'id' => 'facebook_handle',
+//		'std' => 'Default Value',
+//		'type' => 'text');
+//
+//	$options[] = array(
+//		'name' => __('Facebook Icon', 'options_check'),
+//		'desc' => __('This creates a full size uploader that previews the image.', 'options_check'),
+//		'id' => 'facebook_icon',
+//		'type' => 'upload');
 
 	$options[] = array(
 		'name' => __('Instagram Handle', 'options_check'),

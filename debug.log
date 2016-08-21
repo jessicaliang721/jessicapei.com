@@ -2950,3 +2950,24 @@ Stack trace:
 [22-Jun-2016 18:27:23 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
 [22-Jun-2016 18:27:49 UTC] PHP Notice:  Undefined variable: count in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 24
 [01-Aug-2016 20:22:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-single.php on line 3
+[21-Aug-2016 03:30:17 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:17 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:17 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:17 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:17 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:39 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:39 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:39 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:39 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:30:39 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:32:26 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:32:26 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:32:26 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:32:26 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:32:26 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:33:18 UTC] PHP Parse error:  syntax error, unexpected ')' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/header.php on line 11
+[21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
