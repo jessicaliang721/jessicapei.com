@@ -3,13 +3,13 @@
     <div class="container">
         <h3 class="text-center"><?php the_field("about_h3"); ?></h3>
         <span class="divider"></span>
-        <img src="<?php the_field("about_picture"); ?>" class="prof-pic">
-        <p itemprop="address alumniOf"><?php the_field("about_summary"); ?></p>
+        <img src="<?php the_field("about_picture"); ?>" itemprop="photo" class="prof-pic">
+        <p itemprop="address alumniOf availability"><?php the_field("about_summary"); ?></p>
     </div>
 </section>
 
 <!--Skills-->
-<section class="container-fluid section-background" style="
+<section class="container-fluid section-background" itemscope itemtype="http://schema.org/Service" style="
 <?php if (get_field('skills_background')) { ?>
     background-image: url(<?php the_field('skills_background')?>);
 <?php } else { ?>
@@ -20,13 +20,13 @@
         <h3 class="text-center"><?php the_field("skills_h3"); ?></h3>
         <span class="divider"></span>
         <?php the_field("skills_summary"); ?>
-        <div class="row text-center">
+        <div class="row text-center" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
             <?php
             $fields = CFS()->get( 'skills' );
             foreach ( $fields as $field ) {?>
-                <div class="col-xs-6 col-sm-4 col-md-3 skill-icon">
+                <div class="col-xs-6 col-sm-4 col-md-3 skill-icon" itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
                     <?php echo $field['skill_percent']; ?>
-                    <div class="alt-font">
+                    <div class="alt-font" itemprop="serviceType">
                         <?php echo $field['skill_description']; ?>
                     </div>
                 </div>
