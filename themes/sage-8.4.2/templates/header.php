@@ -7,7 +7,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+        <?php if(of_get_option('header_logo')) { ?>
+          <img src="<?php echo of_get_option('header_logo');?>">
+        <?php } else {
+          bloginfo('name');
+        } ?>
+      </a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

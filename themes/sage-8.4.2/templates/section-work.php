@@ -1,4 +1,4 @@
-<section class="work container-fluid">
+<section class="work container-fluid" itemscope itemtype="http://schema.org/WebSite">
     <div class="container">
         <h3 class="text-center"><?php the_field("work_h3"); ?></h3>
         <span class="divider"></span>
@@ -14,12 +14,12 @@
             <?php
             while ($loop->have_posts()) : $loop->the_post(); ?>
                 <div class="col-xs-12 col-sm-6 col-md-4 single-tile">
-                    <div class="block-container">
+                    <div class="block-container" itemprop="thumbnailUrl">
                         <?php the_post_thumbnail('medium'); ?>
                         <div class="overlay">
                             <div>
-                                <a href="<?php the_permalink(); ?>">
-                                    <div class="caption"><?php the_title(); ?></div>
+                                <a href="<?php the_permalink(); ?>" itemprop="url">
+                                    <div class="caption" itemprop="text"><?php the_title(); ?></div>
                                 </a>
                             </div>
                         </div>

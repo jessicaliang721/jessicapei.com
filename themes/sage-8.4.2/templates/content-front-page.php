@@ -4,7 +4,7 @@
         <h3 class="text-center"><?php the_field("about_h3"); ?></h3>
         <span class="divider"></span>
         <img src="<?php the_field("about_picture"); ?>" itemprop="photo" class="prof-pic">
-        <p itemprop="address alumniOf availability"><?php the_field("about_summary"); ?></p>
+        <p itemprop="location alumniOf availability"><?php the_field("about_summary"); ?></p>
     </div>
 </section>
 
@@ -17,7 +17,7 @@
 <?php } ?>
 ">
     <div class="container">
-        <h3 class="text-center"><?php the_field("skills_h3"); ?></h3>
+        <h3 class="text-center" itemprop="skills"><?php the_field("skills_h3"); ?></h3>
         <span class="divider"></span>
         <?php the_field("skills_summary"); ?>
         <div class="row text-center" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
