@@ -14,12 +14,17 @@
             <?php
             while ($loop->have_posts()) : $loop->the_post(); ?>
                 <div class="col-xs-12 col-sm-6 col-md-4 single-tile">
+                    <div class="block-container">
                         <?php the_post_thumbnail('medium'); ?>
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="caption"><?php the_title(); ?></div>
-                    </a>
+                        <div class="overlay">
+                            <div>
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="caption"><?php the_title(); ?></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             <?php
             $count ++;
             endwhile; ?>
