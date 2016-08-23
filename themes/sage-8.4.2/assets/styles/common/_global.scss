@@ -403,6 +403,10 @@ article footer {
   .nav.navbar-nav {
     float: right;
   }
+
+  .work .row > div:nth-child(2n+1) {
+    clear: left;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -421,6 +425,14 @@ article footer {
       margin-right: 0;
       width: 33%;
     }
+  }
+
+  .work .row > div:nth-child(2n+1) {
+    clear: none;
+  }
+
+  .work .row > div:nth-child(3n+1) {
+    clear: left;
   }
 
 }

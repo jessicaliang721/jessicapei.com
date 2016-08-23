@@ -7259,7 +7259,10 @@ article footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .nav.navbar-nav {
-    float: right; } }
+    float: right; }
+
+  .work .row > div:nth-child(2n+1) {
+    clear: left; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .contact form input:not([type="submit"]) {
@@ -7270,7 +7273,13 @@ article footer {
 
   .contact form p:nth-of-type(3) input {
     margin-right: 0;
-    width: 33%; } }
+    width: 33%; }
+
+  .work .row > div:nth-child(2n+1) {
+    clear: none; }
+
+  .work .row > div:nth-child(3n+1) {
+    clear: left; } }
 /* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */
