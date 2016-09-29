@@ -42,7 +42,6 @@ a:focus, a:hover {
   @include background-size(cover);
   background-repeat: no-repeat;
   background-position: 50% 25%;
-  background-attachment: fixed;
 }
 
 .splash-background {
@@ -448,4 +447,8 @@ article footer {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg) {}
+@media (min-width: $screen-lg) {
+  .section-background {
+    background-attachment: fixed;
+  }
+}

@@ -6972,8 +6972,7 @@ a:focus, a:hover {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 25%;
-  background-attachment: fixed; }
+  background-position: 50% 25%; }
 
 .splash-background {
   height: 100vh; }
@@ -7288,5 +7287,8 @@ article footer {
   .work .row > div:nth-child(3n+1) {
     clear: left; } }
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .section-background, .splash-background {
+    background-attachment: fixed; } }
 
 /*# sourceMappingURL=main.css.map */
