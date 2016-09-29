@@ -31,9 +31,15 @@ a:focus, a:hover {
   padding: 0;
 }
 
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
 .section-background {
   @include background-size(cover);
-  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-attachment: fixed;
@@ -248,7 +254,6 @@ body {
 }
 
 
-
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $input-color;
 }
@@ -276,17 +281,10 @@ footer.content-info {
 .work {
   .single-tile {
     position: relative;
-    //margin-bottom: 20px;
-    //min-height: 205px;
 
     .caption {
       @extend .alt-font;
       text-transform: uppercase;
-      //position: absolute;
-      //top: 50%;
-      //left: 50%;
-      //opacity: 0;
-      //@include translate(-50%, -50%);
       padding: 9px;
       border: 2px solid $input-color;
     }
@@ -404,6 +402,10 @@ article footer {
 
 .prev-post {
   float: right;
+}
+
+.page-links {
+  margin-bottom: 40px;
 }
 
 /* Small devices (tablets, 768px and up) */

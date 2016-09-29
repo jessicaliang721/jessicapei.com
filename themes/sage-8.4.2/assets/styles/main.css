@@ -6971,7 +6971,6 @@ a:focus, a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-attachment: fixed; }
@@ -7260,6 +7259,9 @@ article footer {
 
 .prev-post {
   float: right; }
+
+.page-links {
+  margin-bottom: 40px; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {

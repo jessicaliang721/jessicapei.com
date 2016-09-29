@@ -11,7 +11,7 @@
     </div>
     <footer class="text-center">
       <div class="container">
-        <div class="row">
+        <div class="row page-links">
           <span class="next-post">
             <?php next_post_link('&laquo; %link'); ?>
           </span>
