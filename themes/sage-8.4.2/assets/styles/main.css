@@ -7116,6 +7116,11 @@ body {
 .main {
   padding: 0; }
 
+/* changes made 12-28-16 */
+.wp-caption {
+  width: 100% !important;
+  border: 0; }
+
 /*****************
   CONTACT
 *****************/
