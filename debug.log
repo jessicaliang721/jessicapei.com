@@ -2971,3 +2971,24 @@ Stack trace:
 [21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
 [21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
 [21-Aug-2016 03:43:18 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-includes/general-template.php on line 3550
+[28-Dec-2016 20:59:55 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:55 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:55 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 20:59:56 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53
+[28-Dec-2016 21:00:06 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/lib/assets.php on line 53

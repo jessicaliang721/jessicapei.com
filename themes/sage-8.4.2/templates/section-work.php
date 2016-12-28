@@ -18,8 +18,8 @@
                         <?php the_post_thumbnail('medium'); ?>
                         <div class="overlay">
                             <div>
-                                <a href="<?php the_permalink(); ?>" itemprop="url">
-                                    <div class="caption" itemprop="text"><?php the_title(); ?></div>
+                                <a href="<?php the_permalink(); ?>" itemprop="url" class="caption">
+                                   <?php the_title(); ?>
                                 </a>
                             </div>
                         </div>

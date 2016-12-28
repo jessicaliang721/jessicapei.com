@@ -31,11 +31,17 @@ a:focus, a:hover {
   padding: 0;
 }
 
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
 .section-background {
   @include background-size(cover);
   background-repeat: no-repeat;
   background-position: 50% 25%;
-  background-attachment: fixed;
 }
 
 .splash-background {
@@ -212,8 +218,26 @@ body {
   padding: 0;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+figure.wp-caption {
+  width: 100% !important;
+}
+
+.wp-caption {
+=======
+.wp-caption {
+  width: 100% !important;
+>>>>>>> work-computer
+=======
+.wp-caption {
+  width: 100% !important;
+>>>>>>> work-computer
+=======
 .wp-caption {
   width: 100%!important;
+>>>>>>> work-computer
   border: none;
 }
 
@@ -252,7 +276,6 @@ body {
 }
 
 
-
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $input-color;
 }
@@ -280,17 +303,10 @@ footer.content-info {
 .work {
   .single-tile {
     position: relative;
-    //margin-bottom: 20px;
-    //min-height: 205px;
 
     .caption {
       @extend .alt-font;
       text-transform: uppercase;
-      //position: absolute;
-      //top: 50%;
-      //left: 50%;
-      //opacity: 0;
-      //@include translate(-50%, -50%);
       padding: 9px;
       border: 2px solid $input-color;
     }
@@ -310,6 +326,10 @@ footer.content-info {
     width: 100%;
     height: 100%;
     opacity: 0;
+  }
+
+  .overlay div {
+    width: 100%;
   }
 
   .overlay div,
@@ -406,6 +426,10 @@ article footer {
   float: right;
 }
 
+.page-links {
+  margin-bottom: 40px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm) {
   .nav.navbar-nav {
@@ -446,4 +470,8 @@ article footer {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg) {}
+@media (min-width: $screen-lg) {
+  .section-background {
+    background-attachment: fixed;
+  }
+}
