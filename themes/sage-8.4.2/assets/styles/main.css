@@ -7070,7 +7070,8 @@ a:focus, a:hover {
   border: 2px solid #333;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  white-space: normal; }
 
 section,
 .entry-content,
@@ -7119,7 +7120,7 @@ body {
 /* changes made 12-28-16 */
 .wp-caption {
   width: 100% !important;
-  border: 0; }
+  border: none; }
 
 /*****************
   CONTACT
@@ -7174,7 +7175,9 @@ footer.content-info {
   .work .single-tile .caption {
     text-transform: uppercase;
     padding: 9px;
-    border: 2px solid #333; }
+    border: 2px solid #333;
+    display: inline-block;
+    width: 80%; }
   .work .single-tile a {
     color: #333; }
 .work .block-container {
