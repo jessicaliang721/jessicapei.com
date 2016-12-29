@@ -4,10 +4,18 @@
         <span class="divider"></span>
         <?php
         $count_posts = wp_count_posts( 'work' )->publish;
-        $args = array(
-            'post_type' => 'work',
-            'posts_per_page' => 6,
-        );
+        if (is_front_page()) {
+            $args = array(
+                'post_type' => 'work',
+                'posts_per_page' => 6,
+            );
+        } else {
+            $args = array(
+                'post_type' => 'work',
+                'posts_per_page' => -1,
+            );
+        }
+        
         $loop = new WP_Query( $args );
 
         //$count = 0;
