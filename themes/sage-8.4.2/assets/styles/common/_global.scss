@@ -28,7 +28,6 @@ a:focus, a:hover {
 
 .work img {
   max-width: $full-width;
-  display: inline-block;
 }
 
 .wrap.container-fluid {
@@ -310,6 +309,9 @@ footer.content-info {
     display: block;
     position: relative;
     margin: 10px;
+    img {
+      display: inline-block;
+    }
   }
 
   .overlay {
