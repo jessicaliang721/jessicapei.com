@@ -6,6 +6,7 @@
     </header>
     <div class="entry-content">
       <div class="container">
+        <?php if (has_category()) { echo "Category: "; get_the_category(); }?>
         <?php the_content(); ?>
       </div>
     </div>
