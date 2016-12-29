@@ -22,6 +22,10 @@ a:focus, a:hover {
   display: block;
 }
 
+.margin-top {
+  margin-top: 25px;
+}
+
 
 .work img {
   max-width: $full-width;
@@ -303,7 +307,7 @@ footer.content-info {
   }
 
   .block-container {
-    display: inline-block;
+    display: block;
     position: relative;
     margin: 10px;
   }

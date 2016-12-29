@@ -6960,6 +6960,9 @@ a:focus, a:hover {
   max-height: 200px;
   display: block; }
 
+.margin-top {
+  margin-top: 25px; }
+
 .work img {
   max-width: 100%; }
 
@@ -7181,7 +7184,7 @@ footer.content-info {
   .work .single-tile a {
     color: #333; }
 .work .block-container {
-  display: inline-block;
+  display: block;
   position: relative;
   margin: 10px; }
 .work .overlay {

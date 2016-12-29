@@ -3,12 +3,14 @@
         <h3 class="text-center"><?php the_field("work_h3"); ?></h3>
         <span class="divider"></span>
         <?php
+        $count_posts = wp_count_posts( 'work' )->publish;
         $args = array(
             'post_type' => 'work',
-            'posts_per_page' => 6
+            'posts_per_page' => 6,
         );
         $loop = new WP_Query( $args );
-        $count = 0;
+
+        //$count = 0;
         if ($loop->have_posts()) { ?>
         <div class="row text-center">
             <?php
@@ -26,15 +28,14 @@
                     </div>
                 </div>
             <?php
-            $count ++;
+            //$count ++;
             endwhile; ?>
         </div>
         <div class="clearfix"></div>
             <?php
-            echo $count;
-            if (is_front_page() && $count > 6) { ?>
+            if (is_front_page() && $count_posts > 6) { ?>
                     <div class="row text-center">
-                        <a href="<?php echo get_post_type_archive_link( 'work' ); ?>" class="btn btn-default">View All</a>
+                        <a href="<?php echo get_post_type_archive_link( 'work' ); ?>" class="btn btn-default margin-top">View All Work</a>
                     </div>
             <?php }
         }
