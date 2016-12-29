@@ -6,7 +6,17 @@
     </header>
     <div class="entry-content">
       <div class="container">
-        <?php if (has_category()) { echo "Category: " . get_the_category(); }?>
+        <?php
+          $categories = get_the_category();
+          $separator = '';
+          $output = '';
+          if (has_category()) {
+            echo "Category: ";
+            foreach( $categories as $category ) {
+              $output .= esc_html( $category->name ) . $separator;
+            }
+            echo trim( $output, $separator );
+          }?>
         <?php the_content(); ?>
       </div>
     </div>

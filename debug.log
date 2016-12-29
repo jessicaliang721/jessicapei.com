@@ -2975,3 +2975,5 @@ Stack trace:
 [29-Dec-2016 20:35:24 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 35
 [29-Dec-2016 20:35:46 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 12
 [29-Dec-2016 20:36:07 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/section-work.php on line 12
+[29-Dec-2016 21:08:31 UTC] PHP Notice:  Array to string conversion in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-single.php on line 9
+[29-Dec-2016 21:11:09 UTC] PHP Parse error:  syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /srv/www/localwork.jessicapei.com/htdocs/wp-content/themes/sage-8.4.2/templates/content-single.php on line 15

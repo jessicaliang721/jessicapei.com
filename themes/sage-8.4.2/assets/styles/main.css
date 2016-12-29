@@ -6964,7 +6964,8 @@ a:focus, a:hover {
   margin-top: 30px; }
 
 .work img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: inline-block; }
 
 .wrap.container-fluid {
   padding: 0; }
